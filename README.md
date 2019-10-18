@@ -1,5 +1,5 @@
 
-![](images/logo_main.png)           ![](images/logo.png)
+![](images/logo_main.png)                                                              ![](images/logo.png)
 
 <html>
     <a href="http://airtest.netease.com" class="homepage-corner" aria-label="View source on Github">
@@ -32,7 +32,7 @@ We can't transport their bodies, there is simply no way. Star Gates or Time Trav
 
 ### Airtest-Selenium测试框架原理图
 
-![](images/1_web_framework.png)
+![](images/jes3.png)
 
 ### 录制视频示例
 
