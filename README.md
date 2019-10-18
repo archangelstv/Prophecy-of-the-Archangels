@@ -1,5 +1,5 @@
 
-![](images/logo_main.png)           ![](images/jes.png)
+![](images/logo_main.png)           ![](images/logo.png)
 
 <html>
     <a href="http://airtest.netease.com" class="homepage-corner" aria-label="View source on Github">
