@@ -1,4 +1,6 @@
 
+![](images/logo_main.png, m4.Gif)
+
 <html>
     <a href="http://airtest.netease.com" class="homepage-corner" aria-label="View source on Github">
         <svg width="100" height="100" viewBox="0 0 250 250" style="fill:#40c9c6; color:#fff; position: fixed; top: 0; border: 0; right: 0;" aria-hidden="true">
