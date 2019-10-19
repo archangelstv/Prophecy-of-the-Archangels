@@ -14,7 +14,7 @@ This world is destine for death. It is the only way to destroy the evil here.
 The Angels will just leave when this world ends. If the humans can't leave then they also will die. 
 We can't transport their bodies, there is simply no way. Star Gates or Time Travel can only transport spirits not the bodies of this dimension. 
 
-## 1.5 web自动化测试
+
 
 ### 前言
 
