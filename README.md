@@ -13,9 +13,7 @@ The Angels will just leave when this world ends. If the humans can't leave then 
 We can't transport their bodies, there is simply no way. Star Gates or Time Travel can only transport spirits not the bodies of this dimension. 
 
 
-### 前言
-
-[`Selenium`](https://seleniumhq.github.io/selenium/docs/api/py/api.html)是一款web自动化测试框架，它支持各种浏览器，包括 Chrome，Safari，Firefox 等主流浏览器。
+Chrome，Safari，Firefox 等主流浏览器。
 
 得益于Selenium对Python的良好支持，我们在Airtest Project中添加了Airtest-Selenium插件，我们可以使用AirtestIDE进行**web自动化**脚本录制、脚本运行和报告生成。本文将介绍如何使用AirtestIDE进行web自动化测试。
 
