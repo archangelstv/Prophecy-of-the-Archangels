@@ -14,7 +14,6 @@ We can't transport their bodies, there is simply no way. Star Gates or Time Trav
 
 
 
-### Airtest-Selenium测试框架原理图
 
 ![](images/jes.png)
 
