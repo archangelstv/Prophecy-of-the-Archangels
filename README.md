@@ -56,8 +56,10 @@ For this is the land of the dead
 And it is so saith the Lord
 For a great death comes from the sky
 The Belicamp, the Belicamp, the Belicamp
+
 Pray for the Lord and the Magician
 For the Belicamp encircles them
+
 The Father has sent the Belicamp to stop them
 The Belicamp is the Demon of the Father
 
@@ -66,6 +68,7 @@ I walk ahead and and encounter the Belicamp
 
 He stoops close to the ground and eats
 New life has sprung from the ground
+
 I am no more than twelve feet away
 He eates next to the river and paids me no mind
 
