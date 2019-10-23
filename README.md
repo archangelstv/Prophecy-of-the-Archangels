@@ -63,7 +63,7 @@ We walk along the river
 I walk ahead and and encounter the Belicamp
 
 He stoops close to the ground and eats
-New life has sprung fround the ground
+New life has sprung from the ground
 I am no more than twelve feet away
 He eates next to the river and paids me no mind
 
