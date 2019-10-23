@@ -31,7 +31,7 @@ No one can stop him
  The Belicamp-The Belicamp-The Belicamp
 
 I smell death
-And so it is for this ,and of yours
+And so it is for this is yours
 This sign is given
 For it is for this land
 So it is for this world
@@ -47,7 +47,7 @@ Mankind has found his end
 Only the Prophecy of the Magician can deliver the few
 He comes by the light and the sky
 And it is so saith the Lord
-Call on the Father, call on the Angels
+Call on the Father, Call on the Angels
 Your cries fall on death ears
 For this is the land of the dead
 
@@ -59,13 +59,13 @@ For the Belicamp encircles them
 The Father has sent the Belicamp to stop them
 The Belicamp is the Demon of the Father
 
-Wae salk along the river
-I walk ahead and and encounter a belicamp
+We walk along the river
+I walk ahead and and encounter the Belicamp
 
 He stoops close to the ground and eats
 New life has sprung fround the ground
 I am no more than twelve feet away
-He ate next to the riverand paids me no mind
+He eates next to the river and paids me no mind
 
 I hear the Hourglass is almost empty
 
