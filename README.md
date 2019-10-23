@@ -41,12 +41,14 @@ The terrible time is upon us
 Woe to the inhabitant of this land
 Woe to to those who live in this world
 There is no escape
+
 God the Father has made his play
 God has chosen his way
 Mankind has found his end
 Only the Prophecy of the Magician can deliver the few
 He comes by the light and the sky
 And it is so saith the Lord
+
 Call on the Father, Call on the Angels
 Your cries fall on death ears
 For this is the land of the dead
