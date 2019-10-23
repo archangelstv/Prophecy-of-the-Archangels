@@ -20,6 +20,9 @@ We can't transport their bodies, there is simply no way. Star Gates or Time Trav
 
 
 
+
+
+
                            The Belicamp
 
 It is his time
@@ -50,19 +53,19 @@ For this is the land of the dead
 
 and it is so saith the Lord
 For a great death comes from the sky
-The Belicamp, the Belicamp, the e;icamp
+The Belicamp, the Belicamp, the Belicamp
 Pray for the Lord and the Magician
- For the Belicamp encircles them
+For the Belicamp encircles them
 The Father has sent the Belicamp to stop them
 The Belicamp is the Demon of the Father
 
-Wae salk along rthe river
+Wae salk along the river
 Iwalkwalk ahead and and encounter a belicamp
 
-He stoops close to the groundand eats
+He stoops close to the ground and eats
 New life has sprung fround the ground
 I am no more than twelve feet away
-He ate next to the riverand paid me no mind
+He ate next to the riverand paids me no mind
 
 I hear the Hourglass is almost empty
 
