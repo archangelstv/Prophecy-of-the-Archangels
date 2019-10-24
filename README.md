@@ -34,8 +34,10 @@ No one can stop him
 I smell death
 And so it is for this is yours
 This sign is given
+
 For it is for this land
 So it is for this world
+
 The pieces are placed together
 For the prophecy to begin
 The terrible time is upon us
