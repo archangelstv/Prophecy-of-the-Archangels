@@ -78,7 +78,8 @@ He eates next to the river and paids me no mind
 I hear the Hourglass is almost empty
 
 
-![](images/camel1.jpg
+![](images/camel1.jpg)
+
               It's the Camel Not the Burro
 
 It's the camel not the burro
