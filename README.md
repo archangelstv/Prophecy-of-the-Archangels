@@ -85,6 +85,7 @@ I hear the Hourglass is almost empty
 It's the camel not the burro
 They take the burro, the camel walks away
 Thie meaning is obscured, but true
+
 Isreal and Trump take their turn
 This sets the stage
 
@@ -94,6 +95,7 @@ One leader is killed, the other get's his way
 He looks closer on the few
 His name is Isis, his view is on one thing
 He pays much for it
+
 It's on the Camel
 No one knows it's there
 Then when the time is right
