@@ -99,7 +99,7 @@ He pays much for it
 It's on the Camel
 No one knows it's there
 Then when the time is right
-America finds their demise
+Israel finds their demise
 
 America blames the wrong one
 Then Retribution
