@@ -35,7 +35,7 @@ I smell death
 And so it is for this is yours
 This sign is given
 
-For it is for this land
+As it is for this land
 So it is for this world
 
 The pieces are placed together
