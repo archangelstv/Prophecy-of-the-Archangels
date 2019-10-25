@@ -87,7 +87,7 @@ I hear the Hourglass is almost empty
 
 It's the camel not the burro
 They take the burro, the camel walks away
-Thie meaning is obscured, but true
+The meaning is obscured, but true
 
 Israel and Trump take their turn
 This sets the stage
