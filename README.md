@@ -131,6 +131,7 @@ UPDATE
 
 9:47 EST 10/27/2019 Trump announces Isis leader Al-baghdadi killed
 
+![](images/angels.jpg)
 
                                    A Message to the People of Earth
                                        My name is Eligar
