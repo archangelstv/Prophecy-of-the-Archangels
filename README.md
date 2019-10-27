@@ -153,9 +153,9 @@ People of the future way this country will die because of a global Nuclear War.
 
 That's too bad. Your leader and Military will be to blame. There's nothing that can be done I know you have tries to alert them of the danger but no one will listen. This country and another accross the sea will be the first two but others will follow as the Nuclear War spreads accross the globe.
 
-     We wish you luck in your endevers in the future.I know things are difficult/ I do hope this sector of the Comos doesn't explode as predicted in the future because of what happens here.
+     We wish you luck in your endevers in the future.I know things are difficult. I do hope this sector of the Comos doesn't explode as predicted in the future because of what happens here.
 
-The war here must be an incredible one to do that/ There are only a few Humans on other worldsm not enough to resead another planet. If you can find a way to stop this insane President from starting this War, everyone would be greatly relieved. Things are bad enough. Like I say, I wish you well----goodbuy.
+The war here must be an incredible one to do that. There are only a few Humans on other worlds not enough to resead another planet. If you can find a way to stop this insane President from starting this War, everyone would be greatly relieved. Things are bad enough. Like I say, I wish you well----goodbuy.
 
 
 
