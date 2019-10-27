@@ -128,7 +128,7 @@ The New World is born
 
 UPDATE
 
-9:47 EST Trump announces Isis leader Al-baghdadi killed
+9:47 EST 10/27/2019 Trump announces Isis leader Al-baghdadi killed
 
 
                                    A Message to the People of Earth
