@@ -1,4 +1,8 @@
 
+Archangels
+
+Our teachers, guardians and friends
+
 ![](images/logo_main.png)                                                              ![](images/logo.png)
 
 
