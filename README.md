@@ -1,7 +1,7 @@
 
 
 Archangels
-![](images/logo_main.png)                                                              ![](images/logo.png)
+![](images/logo_main.png)                                                              ![](images/angels.jpg)
 
 
 
