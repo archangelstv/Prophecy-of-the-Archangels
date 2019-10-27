@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.5.0">
+	<name>VideoWhisper Live Streams</name>
+	<author>VideoWhisper.com</author>
+	<creationDate>April 14 2010</creationDate>
+	<copyright>Copyright (C) 2009 - 2010 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>beatz.live@videowhisper.com</authorEmail>
+	<authorUrl>www.videowhisper.com</authorUrl>
+	<version>1.0.0</version>
+	<description>This module will show live streams broadcast by VideoWhisper Live Streaming with previews.</description>
+	<files>
+	<filename>helper.php</filename>
+	<filename>index.html</filename>
+	<filename module="mod_videowhisperlivestreams">mod_videowhisperlivestreams.php</filename>
+	<filename>mod_videowhisperlivestreams.xml</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="10" label="Count" description="The number of items to display (default is 10)" />
+		<param name="columns" type="text" default="1" label="Columns" description="The number of items to display per row (default is 1)" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</extension>
