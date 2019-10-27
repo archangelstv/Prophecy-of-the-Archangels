@@ -27,7 +27,7 @@ We can't transport their bodies, there is simply no way. Star Gates or Time Trav
            'wmode','opaque';
            'file','Studio1.flv';
            'volume','5';
-           'streamer','rtmp://your-rtmp-server/videowhisper';
+           'streamer','rtmp://archangelstv.com/videowhisper';
          ('autostart','true';
           'quality','false');
            'mediaspace';
