@@ -5,6 +5,25 @@
 ![](images/angel.jpg)![](images/logo_main.png)![](images/angel.jpg)
 
 
+    <?
+    include(“settings.php”);
+    $stream=$_GET[‘n’];
+    ?>
+    <object id=”player” classid=”clsid:D27CDB6E-AE6D-11cf-96B8-444553540000″ name=”player” width=”328″ height=”260″>
+    <param name=”movie” value=”player.swf” />
+    <param name=”allowfullscreen” value=”true” />
+    <param name=”allowscriptaccess” value=”always” />
+    <param name=”flashvars” value=”file=<?=urlencode($stream)?>.flv&streamer=<?=urlencode($rtmp_server)?>&autostart=true” />
+    <object type=”application/x-shockwave-flash” data=”player.swf” width=”328″ height=”260″>
+    <param name=”movie” value=”player.swf” />
+    <param name=”allowfullscreen” value=”true” />
+    <param name=”allowscriptaccess” value=”always” />
+    <param name=”flashvars” value=”file=<?=urlencode($stream)?>.flv&streamer=<?=urlencode($rtmp_server)?>&autostart=true” />
+    <p><a href=”http://get.adobe.com/flashplayer”>Get Flash</a> to see this player.</p>
+    </object>
+    </object> 
+
+
 
 
            Archangel Michael Just a word
