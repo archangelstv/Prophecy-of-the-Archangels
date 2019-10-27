@@ -1,7 +1,8 @@
 
 
 
-![](images/angel.jpg)  ![](images/logo_main.png) ![](images/angels.jpg)
+![](images/angel.jpg)![](images/logo_main.png)![](images/angels.jpg)
+
 
 
 
