@@ -87,7 +87,7 @@ I hear the Hourglass is almost empty
 
 ![](images/camel1.jpg)
 
-              It's the Camel Not the Burro
+              **It's the Camel Not the Burro**
 
 It's the camel not the burro
 They take the burro, the camel walks away
@@ -134,7 +134,7 @@ UPDATE
 
 ![](images/angels.jpg)
 
-                                   A Message to the People of Earth
+                                  ** A Message to the People of Earth**
                                        My name is Eligar
                                     A little known Angel of God
 
