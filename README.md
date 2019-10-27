@@ -97,13 +97,16 @@ Where it can do the most good
 One leader is killed, the other get's his way
 
 He looks closer on the few
+
 His name is Isis, his view is on one thing
+
 He pays much for it
 
 It's on the Camel
 No one knows it's there
 
 Then when the time is right
+
 Israel finds their demise
 
 America blames the wrong one
@@ -113,6 +116,7 @@ Then Retribution
 No one on our side can believe the Americans are so dumb
 
 They are either dead or greatly saddened 
+
 They are placed in the Sun
 
 There is no forgiveness
@@ -120,6 +124,9 @@ There is no forgiveness
 The New World is born
 
 
+UPDATE
+
+9:47 EST Trump announces Isis leader Al-baghdadi killed
 
 
 
