@@ -28,8 +28,8 @@ We can't transport their bodies, there is simply no way. Star Gates or Time Trav
            'file','Studio1.flv';
            'volume','5';
            'streamer','rtmp://archangelstv.com/videowhisper';
-         ('autostart','true';
-          'quality','false');
+           'autostart','true';
+           'quality','false');
            'mediaspace';
 </script>
 
