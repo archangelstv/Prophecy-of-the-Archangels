@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<config>
+		
+	<fieldset name="server" label="Server"	description="Configure server settings. For more details, read software &lt;a target=&quot;_videowhisper&quot; href=&quot;http://www.videowhisper.com/?p=Requirements&quot;&gt;Requirements&lt;/a&gt;.">
+
+	<field type="text" name="rtmp" size="64" label="RTMP path" description="The path to the rmtp application address"  default="rtmp://youserver.com/videowhisper"/>
+						
+		<field type="radio" name="serverAMF" label="Server Type" description="Server AMF version" default="AMF3">
+		 <option value="AMF3">AMF3</option>
+		 <option value="AMF0">AMF0</option>
+		 <option value="">Default</option> 
+		</field>
+		
+		<field type="radio" name="supportRTMP" label="Support RTMP Streaming" description="Enable RTMP streaming" default="1">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</field>
+
+		<field type="radio" name="disableUploadDetection" label="Disable Upload Detection" description="Disable upload detection (upload detection returns bad call on some rtmp servers that do not support this)" default="1">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</field>
+		
+		<field type="radio" name="alwaysRTMP" label="Always RTMP Streaming" description="Always do RTMP streaming (required for server side recording, external players, transcoding)" default="1">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</field>
+		
+		<field type="text" name="rtmfp_server" size="64" label="RTMFP Address" description="RTMFP server for setting up and managing P2P connections where possible"  default="rtmfp://stratus.adobe.com/f1533cc06e4de4b56399b10d-1a624022ff71/"/>
+		
+		<field type="radio" name="supportP2P" label="Support P2P Streaming" description="Enable P2P streaming" default="0">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</field>
+  
+	</fieldset>	
+				
+<fieldset name="broadcast" label="Broadcast" description="Configure broadcasting settings.">
+<field name="videoCodec" type="radio" default="H264" label="Video Codec" description="Video Codec">
+  <option value="H264">H264</option>
+  <option value="default">Default</option>
+</field>
+<field name="codecProfile" type="radio" default="baseline" label="H264 Profile" description="H264 Codec Profile">
+  <option value="baseline">Baseline</option>
+  <option value="main">Main</option>
+</field>
+
+<field type="text" name="codecLevel" size="5" label="H264 Level" description="H264 Codec Level"  default="3.1" />
+
+		<field type="text" name="bandwidth" size="16" label="Video Bandwidth" description="Default video bandwidth used per stream"  default="32768" />
+	<field type="text" name="maxbandwidth" size="16" label="Maximum Bandwidth" description="Maximum video bandwidth that can be used per stream"  default="81920" />
+
+<field name="soundCodec" type="radio" default="Speex" label="Sound Codec" description="Sound Codec">
+  <option value="Speex">Speex</option>
+  <option value="Nellymoser">Nellymoser</option>
+</field>
+<field name="micRate" type="radio" default="22" label="Nellymoser Rate" description="Nellymoser Codec Rate">
+  <option value="11">11</option>
+  <option value="22">22</option>
+  <option value="44">44</option>
+</field>
+<field name="soundQuality" type="radio" default="9" label="Speex Quality" description="Speex Codec Quality">
+  <option value="4">4</option>
+  <option value="6">6</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</field>
+
+    <field name="configureSource" type="radio" default="1" label="External Encoders" description="Allow broadcasting with external encoders">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+	</field>
+	<field name="welcome_broadcasters" size="64" type="text" default="Welcome to our broadcasting interface!" label="Welcome Message for Broadcasters" description="Message displayed to broadcasters" />
+<field name="embed_codes" type="radio" default="1" label="Embed codes" description="Show embed codes to broadcaster">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+<field name="generateSnapshots" type="radio" default="1" label="Generate Snapshots" description="Broadcaster generates JPG snapshots">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+<field type="text" name="snapshotsTime" size="16" label="Snapshots Interval" description="Interval between snapshot updates (milliseconds)"  default="60000" />
+<field name="generateThumbs" type="radio" default="1" label="Generate Thumbnails" description="Generates server side thumbnails for JPG snapshots">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+<field name="showTimerBroadcast" type="radio" default="1" label="Show Timer" description="Show timer in broadcasting interface">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+</fieldset>
+
+<fieldset name="watch" label="Watch" description="Configure watch settings.">
+	  <field name="welcome_watchers" size="64" type="text" default="Welcome to our live video watch interface!" label="Welcome Message for Watchers" description="Message displayed to watchers" />
+<field name="visitors_watch" type="radio" default="1" label="Visitors can Watch" description="Allow visitors to watch and discuss">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+<field name="watch_chat" type="radio" default="1" label="Watch Chat" description="Watch interface includes chat">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+<field name="watch_list" type="radio" default="1" label="Watch List" description="Watch interface includes viewer list">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+    <field name="ws_ads" size="64" type="text" default="ads.php" label="Ads script" description="In chat ads script. Can also use adinchat.com url. Leave blank to disable." />
+	
+    <field name="filter_rules" size="64" type="text" default="(?i)(fuck|cunt)(?-i)" label="Watch filter rules" description="Regular expressions to filter watcher text" />
+	<field name="filter_replace" size="64" type="text" default=" ** " label="Watch filter replace" description="Filtered text replace" />	
+<field name="showTimerWatch" type="radio" default="1" label="Show Watch Timer" description="Show timer in watch interface">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+<field name="showTimerVideo" type="radio" default="1" label="Show Video Timer" description="Show timer in video only interface">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</field>
+
+</fieldset>	
+
+	<fieldset name="transcode" label="Transcode" description="Configure transcoding settings for converting web video streaming to iOS compatible HLS streaming. Usually requires &lt;a target=&quot;_videowhisper&quot; href=&quot;http://www.videowhisper.com/?p=Wowza+Media+Server+Hosting&quot;&gt;Wowza Streaming Engine / Media Server hosting&lt;/a&gt;. Broadcasters have a control panel to start transcoding and channel pages automatically show HTML5 video container when iPhone/iPad is detected.">
+	
+	<field type="text" name="rtmpTranscode" size="64" label="RTMP Transcode" description="RTMP address where to publish streams when transcoding: can be same as application address."  default="rtmp://youserver.com/videowhisper-x"/>
+	
+	<field type="text" name="httpstreamer" size="64" label="HLS URL" description="HTTP Live Streaming url"  default="http://youserver.com:1935/videowhisper-x/"/>
+	
+	<field type="textarea" name="ffmpegPath" rows="3" cols="32" label="ffmpeg Path" description="FFMPEG path for transcoding"  default="/usr/local/bin/ffmpeg -s 480x360 -r 15 -vb 512k -vcodec libx264 -coder 0 -bf 0 -analyzeduration 0 -level 3.1 -g 30 -maxrate 768k -acodec libfaac -ac 2 -ar 22050 -ab 96k -x264opts vbv-maxrate=364:qpmin=4:ref=4 -threads 4"/>
+	
+	<field type="text" name="canTranscode" size="64" label="Transcode Permission" description="User roles, names, emails allowed to start transcoding."  default="Administrator, Manager, Registered, Author, Editor, Publisher, Super Users"/>
+		
+	</fieldset>			
+	
+
+<params>	
+    <param type="text" name="rtmp" size="64" label="RTMP path" description="The path to the rmtp application address"  default="rtmp://your_server/videowhisper" />
+	<param type="radio" name="serverAMF" label="Server Type" description="Server AMF version" default="AMF3">
+	 <option value="AMF3">AMF3</option>
+	 <option value="AMF0">AMF0</option>
+	 <option value="">Default</option> 
+	</param>
+	<param type="text" name="rtmfp_server" size="64" label="RTMFP Address" description="RTMFP server for setting up and managing P2P connections where possible"  default="rtmfp://stratus.adobe.com/f1533cc06e4de4b56399b10d-1a624022ff71/"/>
+	<param type="radio" name="supportRTMP" label="Support RTMP" description="Enable RTMP streaming" default="1">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</param>
+		
+		<param type="radio" name="disableUploadDetection" label="Disable Upload Detection" description="Disable upload detection (returns bad call on some rtmp servers that do not support this)" default="1">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</param>
+
+		<param type="radio" name="alwaysRTMP" label="Always RTMP" description="Always do RTMP streaming (to enable server side recording or external players)" default="0">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</param>
+		
+		<param type="radio" name="supportP2P" label="Support P2P" description="Enable P2P streaming" default="1">
+		 <option value="0">No</option>
+		 <option value="1">Yes</option>
+		</param>
+
+<param name="videoCodec" type="radio" default="H264" label="Video Codec" description="Video Codec">
+  <option value="H264">H264</option>
+  <option value="default">Default</option>
+</param>
+<param name="codecProfile" type="radio" default="baseline" label="H264 Profile" description="H264 Codec Profile">
+  <option value="baseline">Baseline</option>
+  <option value="main">Main</option>
+</param>
+
+<param type="text" name="codecLevel" size="5" label="H264 Level" description="H264 Codec Level"  default="3.1" />
+
+<param type="text" name="bandwidth" size="16" label="Video Bandwidth" description="Default video bandwidth used per stream"  default="32768" />
+<param type="text" name="maxbandwidth" size="16" label="Maximum Bandwidth" description="Maximum video bandwidth that can be used per stream"  default="81920" />
+
+<param name="soundCodec" type="radio" default="Speex" label="Sound Codec" description="Sound Codec">
+  <option value="Speex">Speex</option>
+  <option value="Nellymoser">Nellymoser</option>
+</param>
+<param name="micRate" type="radio" default="22" label="Nellymoser Rate" description="Nellymoser Codec Rate">
+  <option value="11">11</option>
+  <option value="22">22</option>
+  <option value="44">44</option>
+</param>
+<param name="soundQuality" type="radio" default="9" label="Speex Quality" description="Speex Codec Quality">
+  <option value="4">4</option>
+  <option value="6">6</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</param>
+		
+    <param name="configureSource" type="radio" default="1" label="External Encoders" description="Allow broadcasting with external encoders">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+	</param>
+	<param name="welcome_broadcasters" size="64" type="text" default="Welcome to our broadcasting interface!" label="Welcome Message for Broadcasters" description="Message displayed to broadcasters" />
+<param name="embed_codes" type="radio" default="1" label="Embed codes" description="Show embed codes to broadcaster">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+<param name="generateSnapshots" type="radio" default="1" label="Generate Snapshots" description="Broadcaster generates JPG snapshots">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+<param type="text" name="snapshotsTime" size="16" label="Snapshots Interval" description="Interval between snapshot updates (milliseconds)"  default="60000" />
+<param name="generateThumbs" type="radio" default="1" label="Generate Thumbnails" description="Generates server side thumbnails for JPG snapshots">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+   <param name="welcome_watchers" size="64" type="text" default="Welcome to our live video watch interface!" label="Welcome Message for Watchers" description="Message displayed to watchers" />
+<param name="visitors_watch" type="radio" default="1" label="Visitors can Watch" description="Allow visitors to watch and discuss">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+<param name="watch_chat" type="radio" default="1" label="Watch Chat" description="Watch interface includes chat">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+<param name="watch_list" type="radio" default="1" label="Watch List" description="Watch interface includes viewer list">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+    <param name="ws_ads" size="64" type="text" default="ads.php" label="Ads script" description="In chat ads script. Can also use adinchat.com url. Leave blank to disable." />
+    <param name="filter_rules" size="64" type="text" default="(?i)(fuck|cunt)(?-i)" label="Watch filter rules" description="Regular expressions to filter watcher text" />
+	<param name="filter_replace" size="64" type="text" default=" ** " label="Watch filter replace" description="Filtered text replace" />
+<param name="showTimerBroadcast" type="radio" default="1" label="Show Timer" description="Show timer in broadcasting interface">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+<param name="showTimerWatch" type="radio" default="1" label="Show Watch Timer" description="Show timer in watch interface">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+<param name="showTimerVideo" type="radio" default="1" label="Show Video Timer" description="Show timer in video only interface">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+	
+	<param type="text" name="rtmpTranscode" size="64" label="RTMP Transcode" description="RTMP address where to publish streams when transcoding: can be same as application address."  default="rtmp://youserver.com/videowhisper-x"/>
+	
+	<param type="text" name="httpstreamer" size="64" label="HLS URL" description="HTTP Live Streaming url"  default="http://youserver.com:1935/videowhisper-x/"/>
+	
+	<param type="text" name="ffmpegPath" size="64" label="ffmpeg Path" description="FFMPEG path for transcoding"  default="/usr/local/bin/ffmpeg -s 480x360 -r 15 -vb 512k -vcodec libx264 -coder 0 -bf 0 -analyzeduration 0 -level 3.1 -g 30 -maxrate 768k -acodec libfaac -ac 2 -ar 22050 -ab 96k -x264opts vbv-maxrate=364:qpmin=4:ref=4 -threads 4"/>
+	
+	<param type="text" name="canTranscode" size="64" label="Transcode Permission" description="User roles, names, emails allowed to start transcoding."  default="Administrator, Manager, Registered, Author, Editor, Publisher, Super Users"/>
+		
+	</params>
+</config>
