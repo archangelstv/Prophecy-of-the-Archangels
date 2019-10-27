@@ -10,28 +10,7 @@
 <object width="560" height="340" id="lsplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param name="movie" value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=channelname&amp;autoPlay=false"></param><param name="allowScriptAccess" value="always"></param><param name="allowFullScreen" value="true"></param><embed name="lsplayer" wmode="transparent" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=channelname&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed></object><div style="font-size: 11px;padding-top:10px;text-align:center;width:560px">Watch <a href="http://www.livestream.com/?utm_source=lsplayer&utm_medium=embed&utm_campaign=footerlinks" title="live streaming video">live streaming video</a> from <a href="http://www.livestream.com/channelname?utm_source=lsplayer&utm_medium=embed&utm_campaign=footerlinks" title="Watch channelname at livestream.com">channelname</a> at livestream.com</div>
 
 
-    <?
-    include(“settings.php”);
-    $stream=$_GET[‘n’];
-    ?>
-    <object id=”player” classid=”clsid:D27CDB6E-AE6D-11cf-96B8-444553540000″ name=”player” width=”328″ height=”260″>
-    <param name=”movie” value=”player.swf” />
-    <param name=”allowfullscreen” value=”true” />
-    <param name=”allowscriptaccess” value=”always” />
-    <param name=”flashvars” value=”file=<?=urlencode($stream)?>.flv&streamer=<?=urlencode($rtmp_server)?>&autostart=true” />
-    <object type=”application/x-shockwave-flash” data=”player.swf” width=”328″ height=”260″>
-    <param name=”movie” value=”player.swf” />
-    <param name=”allowfullscreen” value=”true” />
-    <param name=”allowscriptaccess” value=”always” />
-    <param name=”flashvars” value=”file=<?=urlencode($stream)?>.flv&streamer=<?=urlencode($rtmp_server)?>&autostart=true” />
-    <p><a href=”http://get.adobe.com/flashplayer”>Get Flash</a> to see this player.</p>
-    </object>
-    </object> 
-
-
-
-
-           Archangel Michael Just a word
+              Archangel Michael Just a word
 There are many more Angels than people. We are Watchers, we don't interfere. There are a great many of us all over the Earth.
 The wings of the small ones are much larger than depicted. We exist in many realms at the same time.
 
