@@ -20,8 +20,18 @@ We can't transport their bodies, there is simply no way. Star Gates or Time Trav
 
 
 ![](images/jes.png
-)<script type='text/javascript' src='swfobject.js'></script> <div id='mediaspace'>This text will be replaced</div> <script type='text/javascript'> var so = new SWFObject('player-viral.swf','mpl','320','320','9'); so.addParam('allowfullscreen','true'); so.addParam('allowscriptaccess','always'); so.addParam('wmode','opaque'); so.addVariable('file','Studio1.flv'); so.addVariable('volume','5'); so.addVariable('streamer','rtmp://your-rtmp-server/videowhisper'); so.addVariable('autostart','true'); so.addVariable('quality','false'); so.write('mediaspace'); </script>
 
+<script type='text/javascript' src='swfobject.js'></script> <div id='mediaspace'>This text will be replaced</div> <script type='text/javascript'> var so = new SWFObject('player-viral.swf','mpl','320','320','9');
+           'allowfullscreen','true' 
+           'allowscriptaccess','always';
+           'wmode','opaque';
+           'file','Studio1.flv';
+           'volume','5';
+           'streamer','rtmp://your-rtmp-server/videowhisper';
+         ('autostart','true';
+          'quality','false');
+           'mediaspace';
+</script>
 
 
 
