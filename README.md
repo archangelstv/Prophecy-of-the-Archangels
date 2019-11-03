@@ -81,7 +81,7 @@ He stoops close to the ground and eats
 New life has sprung from the ground
 
 I am no more than twelve feet away
-He eates next to the river and paids me no mind
+He eats next to the river and pays me no mind
 
 I hear the Hourglass is almost empty
 
