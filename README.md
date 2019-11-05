@@ -141,7 +141,7 @@ UPDATE
 
 The Republican's in your world are not from here. They're from a world at the edge of the Galaxy. They're able to jump from star to star like frogs jumping about the comos. They call themselves Grey's but they're really Onanss, to hide their identity.from us, but we have watched themthrought time.They're in many other worlds as well reaking havoc. 
 
-     Many are fighting them also. They have found a way by taking ypur bodies aboard their ships and using their knowledge to enter your bodies at birth, pushing your human souls aside at the last minute, taking control of that body. There many of these in the US and now have control partially. They do have a big problem they can't overcome.
+     Many are fighting them also. They have found a way by taking your bodies aboard their ships and using their knowledge to enter your bodies at birth, pushing your human souls aside at the last minute, taking control of that body. There many of these in the US and now have control partially. They do have a big problem they can't overcome.
 
      When they die, leave the body, their soul mutates. So they can't re-enter another of your bodies and when they try to go back to their home planet, they're not accepted. Most are killed while other's escape into the Comos.
 
