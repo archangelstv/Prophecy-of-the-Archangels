@@ -1,0 +1,832 @@
+\input{header}
+
+%Bibtexformat
+%\usepackage[style=authortitle-icomp, backend=bibtex]{biblatex}
+\usepackage[style=numeric, backend=bibtex]{biblatex}
+%Link zur bib
+\bibliography{literatur/bib}  
+%zeilenabstand Anhang
+\setlength{\bibitemsep}{1em} 
+%http://biblatex.dominik-wassenhoven.de/download/DTK-2_2008-biblatex-Teil1.pdf
+% Beispiel footcite
+%\footcite[Vgl.][Seite 5]{Bal.2009}
+
+\begin{document}
+\pagenumbering{Roman}
+
+\include{deckblatt}
+
+\tableofcontents
+\setcounter{page}{1}
+
+\chapter{Einleitung}
+
+\pagenumbering{arabic}
+
+In den letzten Jahren hat sich eine große Wandlung im Broadcastingumfeld ergeben. Während früher die
+Auslieferung von Videocontent in Standardauflösung über DVB-S und DVB-T in MPEG2 nahezu die einzige
+Art der Videodistribution war, ist der Distributionsprozess heute viel stärker diversifiziert und interaktiv. 
+
+Potentielle Kunden erwarten heutzutage die parallele Auslieferung des Videocontents in regulärer SD- als auch
+in FullHD-Auflösung. Weiterhin sind die Empfangsgeräte der Kunden sehr viel inhomogener in Bezug auf 
+technische Anbindung als auch Dekodierfähigkeiten. Videoinhalte werden heutzutage sowohl stationär auf regulären
+Fernsehegeräten und modernen SmartTVs als auch mobil auf Tablets und Smartphones konsumiert. Dabei gewinnt 
+gleichzeitig auch die Interaktivität durch zusätzliche Medieninhalten im Rahmen des hybriden Fernsehen an Bedeutung.
+Dadurch stehen die traditiononellen Anbieter dieser Dienste vor der großen Herausforderungen, 
+wie sie ihre Inhalte an die Kunden über verschiedene Kanäle in verschiedenen Auflösungen gleichzeitig übertragen 
+könnnen. Mit Scalable Video Coding (SVC) steht eine Technologie zur Verfügung, die dieses zu Leisten im Stande ist.
+    
+In dieser Ausarbeitung wird Scalable Video Coding detailliert vorgestellt. Im ersten Teil der Arbeit wird vorgestellt 
+welche aktuellen Herausforderungen sich im Broadcastingbereich stellen. Im zweiten Teil wird die Scalable Video 
+Coding Extension des H264/AVC-Standards vorgestellt. In diesem Abschnitt wird zuerst ein allgemeiner Ausblick 
+auf die Notwendigkeit und Vorteile von SVC gegeben. Danach wird die Videokodierung mit H264/AVC vorgestellt 
+und anschließend die Erweiterungen zwischen H264/AVC und H264-SVC gegenübergestellt. Im letzten Abschnitt wird 
+die Verwendung von Scalable Video Coding im Rahmen von MPEG DASH vorgestellt. 
+
+Im vorletzten Abschnitt wird detailliert der Workflow des JSVM-Referenzcodec vorgestellt und evaluiert in wie
+fern sich der Codec derzeit für reale Anwendungen einsetzen lässt. Im zweiten Teil dieses Abschnitts wird das 
+Scalable Streaming Projekt vorgestellt und weitere SVC-Implementationen, wie der OpenSVC-Decoder vorgestellt.
+
+Abschließend wird im letzten Abschnitt eine Zusamenfassung über den Themenbereich Scalable Video Coding gegeben.
+
+\chapter{Aktuelle Trends und Herausforderungen}
+In den vergangenen Jahren dominierten verschiedene Themen das Broadcastingumfeld. Im Jahr 2009
+befand sich die Broadcastingindustrie inmitten der Vorbereitung auf die Umstellung auf HD. Daher
+wurde dies als wichigster Trend der nächsten Jahre gesehen\parencite[1]{Zaller.2012.Trends}. 
+In Deutschland begann im Jahr 2010 beispielsweise die Ausstrahlung von ARD HD im regulärem Sendebetrieb.
+
+In den Jahren 2010 und 2011 wurde die Distribution über mehre Plattformen, das sogenannte
+"`Multiplatform delivery"', als wichtigster Trend gesehen\parencite[1]{Zaller.2012.Trends}.
+Auch im Jahr 2012 liegt dies mit weitem Abstand vor anderen Trends weiterhin vorn. Einhergehend damit
+wurden als weitere wichtige Trends die Opimierung des Workflows und die Übertragung via IP genannt
+\parencite[1]{Zaller.2012.2012}. 
+Die Ausrichtung auf die Bedienung mehrere Distributionskanäle und Plattformen hat mehrere Gründe.
+
+Einerseits haben sich die Sehgewohnheiten der Konsumenten geändert. Beispielsweise sank im Jahr 2011 die
+Zahl an amerikanischen Haushalten, welche keinen Fernseher besaßen, zum ersten Mal in 20
+Jahren\parencite[1]{Stelter.2011}. Das bedeutet nicht automatisch, dass der Fernsehkonsum rückläufig
+ist und durch das Internet ersetzt wird, sondern dass es zu einer Medienkonvergenz kommt.
+Traditionelles Fernsehen und Internet verschmelzen. Fernsehen wird über das Internet geschaut und
+über Fernsehgeräte bzw. SmartTVs wird im Internet gesurft und Apps werden ausgeführt 
+\parencite[180]{Hohlfeld.2010}.
+
+Bereits im Jahr 2011 bestand über die Hälfe des ganzen Internetverkehrs der Konsumenten aus Videodaten. Bis 
+zum Jahr 2016 wird sich der Wert auf ca. 56\% steigern. Der Anteil an Videodaten für SmartTVs lag im Jahr 
+2011 bei 8\% und wird bis zum Jahr 2016 auf 12\% steigern\parencite{Cisco.2012}
+
+Die Möglichkeit Webinhalte auf dem Fernsehgerät bzw. SmartTV zu empfangen, ermöglicht einerseits neuen 
+Konkurrenten den Einstieg in den Mark. Sogenannter Over-the-top-Content, also im Internet frei verfügbare 
+und durch Werung finanzierte Inhalte, wie beispielsweise Youtube oder Hulu im amerikanischen Markt, können auf
+lange Sicht gegenüber etablierten Anbietern im Broadcastingumfeld Marktanteile
+gewinnen\parencite[2]{Sader.2008}.
+
+Andererseits bieten Fernsehgerät mit Internetzugang auch für etablierte Anbietern im Broadcastingumfeld 
+eine neue Einnahmequelle im Rahmen von HybridTV. Zusätzlich bietet es dem Zuschauer durch Zusatzinformationen
+einen Mehrwert und kann sich so positiv auf die Zuschauerzufriedenheit und Marktanteile
+auswirken\parencite{techfacts.2011}
+
+Weiterhin nimmt die Anzahl unterschiedlichen Endgeräte mit heterogenen Dekodierfähgikeiten stark
+zu. Während Broadcastinganbieter früher im Rahmen von Ausstrahlungen in DVB-S oder DVB-T davon ausgehen konnte, 
+dass nahezu alle Geräte die in MPEG2 ausgestrahlten Inhalte bis zu einer bestimmten Bitrate dekodieren können, 
+gibt es heute einerseits Geräte am unteren Ende der Skala, die nur SD-Content im H264/AVC-Baseline Profile 
+abspielen können, wie beispielsweise ältere Android Sartphones. Anderereits gibt es wiederum Geräte, die 
+FullHD in  H264/AVC-High Profile dekodieren können, z.\,B. reguläre Setupboxen und 
+SmartTVs\parencite[3]{Sader.2008}.
+
+Ein weiterer Grund für die Forcierung auf mehrere Distributionskanäle ist der heterogene
+Übertragungskanal zwischen Sender und Empfänger\parencite[4]{Sader.2008}. Die Empfänger
+sind sowohl mit sehr hoher Bandbreite von teilweise 100Mbit/s angebunden, als auch mit einer relativ
+geringen Bandbreite von unter 1Mbit/s.
+Durschnittlich beträgt die Bandbreite in Deutschland derzeit beispielsweise nur 5,8 Mbit/s und wird in den nächsten
+Jahren nur langsam steigen\parencite[1]{Schieb.2012}.
+Erschwerend kommt hinzu, dass im mobilen Bereich durch die Shared-Media-Charakteristik die
+Bandbreite stark schwanken kann.
+
+Um diesen sich in Zukunft weiter wachsenden Herausforderungen zu begegnen, bieten sich skalierbare Videocodecs
+an. Diese sollen im folgenden näher vorgestellt werden.
+
+\chapter{H264-SVC in a Nutshell}
+
+\section{Allgemein}
+Im Bezug auf einen Videostrom versteht man unter dem Begriff "`Skalierbarkeit"' die Eigenschaft, dass Teile des
+Videostroms entfernt werden können und der Videostrom nach Entfernen weiterhin valide und abspielbar
+bleibt. Dieser Teilvideostrom bildet den Originalvideostrom mit verringerter Qualität ab.
+Videoströme, die diese Fähigkeit nicht besitzen, nennt man Singlelayer-
+Videoströme\parencite[2]{SchwarzNeu.2007}.
+
+Skalierbare Videocodecs befinden sich seit nunmehr 20 Jahren in der Entwicklung. Bereits ältere
+Videocodecs wie das angesprochene MPEG2 boten bereits durch standardisierte Erweiterungens (z.\,B. MPEG2 Video) die
+Möglichkeiten zur Übertragung von skalierbaren Videoströmen \parencite[1]{SchwarzNeu.2007}.
+
+Allerdings wurden diese Codecerweiterungen nur selten benutzt, da der Bedarf nach Auslieferung von
+skalierbaren Videoinhalten noch vergleichweise gering war. Dies ist durch die relativ homogene 
+technische Ausstattung der Empfänger und deren Anbindung an das Internet zu erklären.
+Zusätzlich verringerte sich durch den Einsatz der SVC-Erweiterungen in älteren Codecs die Effizienz der 
+Videokodierung stark, während gleichzeitigem Rechenaufwand anstieg \parencite[1f]{Shahid.2010}.
+
+In den vergangenen Jahren hat in Bezug auf die technisch Anbindung und Ausstattung der Empfänger
+eine starke Heterogenisierung eingesetzt, sodass skalierbare Videokodierung und Distribution immer 
+mehr in den Fokus rückt. Weiterhin hat sich mit Verabschiedung von H264/AVC im Jahr 
+2007 \parencite[2]{Shahid.2010} ein Codec etabliert, der sehr viel effizienter kodiert als ältere 
+Videocodecs\parencite[2]{Shapiro.2009}.
+ 
+Entwickelt vom JVT\footnote{JVT - Joint Video Team} und auf dem regulären H264/AVC-Standard aufbauend, ist
+H264-SVC ist eine Erweiterung, die als Amendment 3 in Annex G in dieses Standard aufgenommen
+wurde\parencite[10]{Shapiro.2009}.
+Damit benutzt H264-SVC die effizienten Enkodierfunktionen und technischen Features des
+H264/AVC-Videostandards und erweitert diesen, um den zu übertragenen Videostrom skalierbar zu
+machen\parencite[59]{Cho.2010}.
+Zusätzlich bleibt dadurch die Rückwärtskompatibilität zu herkömlichen H264/AVC-Dekodern gewahrt.
+\parencite[601]{Sader.2008}
+
+H264-SVC bietet im Broadcastingumfeld einige Vorteile gegenüber anderen derzeit eingesetzten Verfahren, 
+wie beispielse Simulcast, bei welchem jeder Videostrom unabhängig voneinander kodiert und übertragen wird.
+\parencite[1]{Shahid.2010} Auf H264/AVC aufbauend, ist H264-SVC vollständig abwärtskompatibel zu 
+herkömlichen H264-Dekodern. 
+
+\begin{figure}[htb]
+	\vspace{0.5cm}
+	\centering
+	\includegraphics[width=0.95\textwidth]{bilder/typesOfLayers.jpg}
+	\caption[Arten der Skalierbarkeit]{Arten der Skalierbarkeit (Eigene Abbildung nach \parencite[143]{Richardson.2008})}
+		%Eigene Abbildung nach  H.264 and MPEG-4 Video Compression Seite, 2008, Seite 143}	
+	\label{fig:typeofenhancementlayers}
+	\vspace{0.5cm}
+\end{figure}
+
+Diese ignorieren die SVC-Erweiterung und dekodieren nur die regulären H264/AVC-Inhalt.
+Dies ist möglich indem neben einem regulärem H264/AVC-Videostrom, dem sogenannten Baselayer, weitere
+Videoströme, den sogenannten Enhancementlayers, eingebettet werden.
+Diese Enhancementlayers können sich gegenüber dem Baselayer in Bezug auf Framerate (Temporal),
+Auflösung (Spatial) und Bildqualität (Quality) unterschieden (Siehe Abbildung
+\ref{fig:typeofenhancementlayers}) \parencite[601]{Sader.2008}.
+In skalierbaren Videoströmen können diese drei Arten von Enhancementlayern auch beliebig kombiniert werden,
+z.\,B. Spatio–temporale Enhancementlayer \parencite[2]{SchwarzNeu.2007}.
+
+Zusätzlich können mit einer in H264-SVC enkodierten Videoquelldatei gleichzeitig unterschiedliche Geräte z.\,B. 
+Smartphones und FullHD-Geräte angesprochen werden. Die sonst übliche Transkodierung und das Vorhaltung 
+vorab enkodierter Teilvideodatein entfällt. Das erleichtert die Langzeitarchivierung und verringert gleichzeitig
+den benötigten Speicherplatz.
+
+Bei Verwendung dieser H264-SVC erhöht sich der Overhead nur um 10\% bis 20\% verglichen mit regulärem
+H264/AVC. Im Falle eines stark fehleranfälligen Übertragungsmediums kann der Overhead sogar geringer ausfallen,
+als bei Simulcastübertragung. Zusätzlich bleibt der zur Enkodierung und Dekodierung benötigte Rechenaufwand 
+nahezu gleich \parencite[4]{Shapiro.2009}.
+
+\section{Abgrenzung zu Adaptive Streaming}
+H264-SVC und Adaptive Streaming unterschieden sich in der Art der Speicherung der Videodaten. Bei 
+der Verwendung von Adaptive Streaming werden Videodaten in einzelne Segmente variabler Länge unterteilt und 
+getrennt gespeichert. Bei der Verwendung von H264-SVC werden die Videodaten in einzelne Layer kodiert in einer Datei 
+gespeichert. Je nach Implementation werden bei der Auslieferung des Videoconents die Layer on the Fly
+extrahiert und übertragen, oder vorab extrahiert. 
+
+\section{Videokodierung mit H264/AVC}
+Als Erweiterung des H264/AVC-Standards benutzt H264-SVC den gleichen Enkodierablauf und erweiterten diesen
+in wenigen Bereichen, um Skalierbarkeit zu ermöglichen. Die Videkodierung mit H264/AVC erfolgt in vier 
+Teilschritten. Zuerst wird der aktuelle Videoframe (\textit{F}) in mehrere Slices unterteilt, die wiederum 
+Makroblöcke enthalten \parencite[146]{Hottong.2009}. 
+In jedem Makroblock sind die Luminanz und Chrominanzwerte gespeichert. Aufgrund des Chromasubsamplings liegen 
+die Luminanzwerte in den meisten Fällen nur mit halbierter Auflösung vor.
+
+Die Größe der Makroblöcke ist auf 16x 16 Pixel festgelegt. Makroblöcke können wiederum in verschiedene 
+Makroblockpartitionen unterteilt werden z.B  8 x 8 Pixel Blöcke. Diese Makroblockpartitionen können selbst 
+wieder in Sub-Makroblockpartitionen von beispielsweise 4 x 4 Pixel unterteilt werden. Diese so entstehende 
+Unterteilung wird als \textit{Tree Structured Motion Compensation} 
+bezeichnet \parencite[160]{Richardson.2008}.
+
+Neben der Makroblockgröße unterscheidet man auch den Typ eines Makroblocks und damit die Art der Slices. 
+I-Makroblöcke werden von vorherigen Makroblöcken des selben Slices kodiert und dienen anderen Makroblöcke als 
+Referenz. P-Makroblöcke referenzieren auf vorhergegangene I-Makroblöcke von vorherigen Frames und
+ermöglichen dadurch eine Steigerung der Kompressionrate. B-Makroblöcke referenzieren sowohl auf 
+vorhergegangene- als auch auf nachfolgende I-Makroblöcken dieser Frames und ermöglichen so eine weitere 
+Steigerung der Kompression \parencite[164f]{Richardson.2008}.
+ 
+Analog zu den Makroblöcken werden auch die Slices nach I, P und B-Slice unterschieden. I-Slices enthalten 
+nur I-Makroblöcke, während P-Slices sowohl I-Makroblöcke als auch P-Makroblöcke enthalten können. B-Slices 
+können I-Makroblöcke und B-Makroblöcke enthalten \parencite[159f]{Richardson.2008}. 
+%Zur effizienteren Verwaltung der Referenzbilder bei Verwendung von B-Slices werden diese in einen Index eingetragen.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{bilder/h264codec.pdf}
+	%\caption[H264/AVC-Enkoder \newline \textit{Quelle: H.264 and MPEG-4 Video Compression, 2008}]{H264/AVC-Enkoder}
+	\caption[Funktionsweise eines H264/AVC-Enkoders]{Funktionsweise eines H264/AVC-Enkoders 
+	\parencite{Richardson.2008}}
+	\label{fig:h264enkoder}
+\end{figure}
+
+Bei der Kodierung eines Frames (\textit{F}) wird für jeden Makroblock eine Voraussage getroffen.
+Diese kann eine intra-basierte Voraussage sein, die auf der Kodierung von vorangegangener Makroblöcken des
+gleichen Slice beruht. Alternativ kann es auch eine intra-basierte Voraussage sein, die auf der 
+Referenzierung und Kodierung von Makroblöcken aus vorausgegangenen- und nachfolgenden Frames beruht. 
+In beiden Fällen wird die Differenz zwischen dem aktuellen Makroblock und der Voraussage gebildet und 
+die Abweichungen zwischen beiden Makroblöcken gespeichert\parencite[161f]{Richardson.2008}.
+
+Im nächsten Schritt werden diese Abweichungen quantisiert und die Koeffizienten in einem Zickzack-Verfahren 
+angeordnet\parencite[198f]{Richardson.2008}. Dieses Ausleseverfahren ist für die anschliessende 
+Entropiekodierung besser geeignet, da so ähnliche Koeffizienten nacheinander stehen und diese somit 
+einfacher zusammenfassbar sind \parencite[30]{Hottong.2009}.
+Bei H264/AVC kommen mehrere Verfahren zur Entropiekodierung zum Einsatz. Neben Variable-Length Codes (VLC) 
+auch Context-Adaptive Arithmetic Coding (CABAC), Context-Adaptive Variable Coding (CAVLC) 
+und Exp-Golomb \parencite[198f]{Richardson.2008}.
+
+Im letzten Schritt werden die entropiekodierten Koeffizienten zu einem Videostrom zusammengefasst und 
+durch den Network Abstraction Layer (NAL) übertragen\parencite[161f]{Richardson.2008}
+
+\section{Videokodierung mit H264-SVC}
+
+\subsection{Baselayer und Enhacementlayer}
+Zur Erzeugung von skalierbaren Videoströmen werden H264-SVC Videoströme in zwei Arten von Layer unterteilt.
+Einereits gibt es den sogenannten Baselayer, welcher in jedem H264-SVC Videostrom vorhanden sein muß.
+Zusätzlich gibt es auf diesen aufbauend mehrere Enhacementlayer, die Videoströme mit
+unterschiedlichen Qualitätsstufen (Auflösung, Framerate und Qualität) enthalten.\parencite[1]{Unanue.2011}
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=0.95\textwidth]{bilder/svc_layer2}
+	%\caption[h264enkoder]{Base- und Enhancementlayer 
+	%\\ textit{Quelle: H.264 and MPEG-4 Video Compression, Seite 142, 2008}}
+	\caption[Base- und Enhancementlayer]{Base- und Enhancementlayer \parencite[142]{Richardson.2008}}
+	\label{fig:h264enkoder}
+\end{figure}
+
+Der Baselayer wird im regulärem H264/AVC-Modus enkodiert. Die Kodierung erfolgt mit festgelegter 
+Group of Pictures bzw. GOP und freier Refrenzierung der einzelnen Frames innherhalb jeder GOP.
+Dadurch kann der Baselayer auch von regulären, nicht H264-SVC-fähigen H264/AVC Videodecodern dekodiert- 
+und angezeigt werden. Bei diesen Geräten werden die Enhacementlayer 
+ignoriert. \parencite[144]{Richardson.2008} 
+
+H264-SVC-fähige Geräte dekodieren sowohl den Baselayer als auch den Enhancementlayer. Die einzelnen Enhancementlayer 
+erhöhen mit jeder Iteration des Enhancementlayers die Qualität in Bezug auf Auflösung, Bitrate oder Framerate.
+Bei der Dekodierung wird aus dem im Enhancementlayer gespeicherten Deltawerten bzw Differenzen zum Baselayer  
+und dem Baselayer selber das Videobild rekonstruiert \parencite[144]{Richardson.2008}.
+
+\subsection {Spatiale Skalierbarkeit} 
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.95\textwidth]{bilder/base2enhancementlayer.jpg}
+	%\caption[base2enhancementlayers]{Enkodierung von Baslayer und Enhancementlayer 
+	%\\ Eigene Abbildung nach \textit{H.264 and MPEG-4 Video Compression Seite, 2008, Seite 143}}
+	\caption[Enkodierung von Baslayer und Enhancementlayer ]{Enkodierung von Baslayer und Enhancementlayer \\ 
+	(Eigene Abbildung nach \parencite[143]{Richardson.2008})}
+	\label{fig:base2enhancementlayers}
+\end{figure}
+
+Die Videoenkodierung der Spatialen- bzw. Auflösungs-Enhancementlayer erfolgt, indem zuerst für jedem Frame des 
+Videoeingangssignal (Siehe Abbildung \ref{fig:base2enhancementlayers} a)
+der Baselayer (Siehe Abbildung \ref{fig:base2enhancementlayers} b)
+mit verringerter spatialer Qualität in H264/AVC enkodiert wird. 
+
+Um die Differenzen des Baselayers zum Originalvideobild zu erhalten, wird der zuvor erzeugte Baselayer auf 
+die ursprüngliche Größe skaliert (Siehe Abbildung \ref{fig:base2enhancementlayers} c) und die Differenz beider Bilder 
+extrahiert (Siehe Abbildung \ref{fig:base2enhancementlayers} d). 
+Aus diesem Differenzbild wird der erste Enhancementlayer enkodiert. Jeder weitere Enhancementlayer enkodier die 
+Differenz zum vorherigen, hochskalierten Enhancementlayer.
+\parencite[142ff]{Richardson.2008}
+
+Die Dekodierung der mit H264-SVC enkodierten Videoströmen erfolgt, indem zuerst der Baselayer dekodiert wird 
+(Siehe Abbildung \ref{fig:decode_base2enhancementlayers} a) und auf die ursprüngliche Auflösung hochskaliert wird
+(Siehe Abbildung \ref{fig:decode_base2enhancementlayers} b). Anschließend werden die Enhancementlayer dekodiert 
+(Siehe Abbildung \ref{fig:decode_base2enhancementlayers} c) und deren Bildinformationen zum bereits dekodierten
+Baselayer hinzugefügt (Siehe Abbildung \ref{fig:decode_base2enhancementlayers} d), um das vollständigen Videobild
+wiederherzustellen.\parencite[144]{Richardson.2008}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.95\textwidth]{bilder/decode_base2enhancementlayer.jpg}
+	%\caption[base2enhancementlayers]{Dekodierung von spatialen Enhancementlayern
+	%\\ Abbildung nach \textit{H.264 and MPEG-4 Video Compression Seite, 2008, Seite 143}}
+	\caption[Dekodierung von spatialen Enhancementlayern]{Dekodierung von spatialen Enhancementlayern \\ 
+	(Eigene Abbildung nach \parencite[143]{Richardson.2008})}
+	\label{fig:decode_base2enhancementlayers}
+\end{figure}
+
+\subsection {Temporale Skalierbarkeit}
+Zur Erzeugung verschiedenerer temporaler- bzw. zeitlicher- Enhancementlayer verwendet H264-SVC, die regulären in 
+H264/AVC angewandten hierarischen B-und P Frames\parencite[3]{WienNeu.2007}. 
+Zur Erzeugung der temporalen Enhancementlayer werden die einzelnen Frames der in höchster Framerate
+vorliegende Videodatei auf die einzelnen Layer aufgeteilt. Die Länge der GOP ist dabei relativ frei wählbar. 
+Der Baselayer enthält die Qualitätsstufe mit der geringens Framerate. 
+In diesem wird nur ein geringer Teil der GOP gespeichert, beispielsweise I-Frame des ersten und letzten 
+Frames der GOP und ein weiterer B-Frame.\parencite[144]{Richardson.2008}
+
+Die Enhancementlayer kodieren sukzessive jeweils höhere Frameraten, indem sie auf die Frames der vorhergehenden 
+Layer referenzieren. Im ersten Enhancementlayer werden weitere B-Frames des Originalvideodatei gespeichert.
+Diese B-Frames referenzieren die I-Frames des Baselayers. Im nachfolgendem Enhancementlayer werden wiederum
+weitere B-Frames des Originalvideodatei gespeichert. Damit referenziert dieser nun den Baselayer und den ersten
+Enhancementlayer.\parencite[292]{Richy.2011}. 
+
+Dieses Prinzip setzt sich bis zum letzten Baselayer fort. Bei der Dekodierung muß man daher alle Base-
+und Enhancementlayer dekodieren, die dem gewünschten Enhancementlayer vorangehen.
+\parencite[292]{Richy.2011}.    
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.95\textwidth]{bilder/svc_temporal.jpg}
+	%\caption[base2enhancementlayers]{Temporale Skalierbarkeit
+	%\\ Abbildung nach \textit{H.264 and MPEG-4 Video Compression Seite, 2008, Seite 143}}
+	\caption[Temporale Skalierbarkeit]{Temporale Skalierbarkeit \parencite{Slivinski.2011}}
+	\label{fig:svc temporal}
+\end{figure}
+
+% http://www.lifesize.com/videoconferencingspot.com/?p=1406
+
+\subsection{Qualitative Skalierbarkeit}
+H264-SVC enkodierte Videoströme mit qualitativer Skalierbarkeit besitzen mehrere Layer mit unterschiedlicher 
+Bildqualitätsstufen. Diese Art der Skalierbarkeit wird auch als SNR- Skalierbarkeit bezeichnet.
+Im Detail unterstützt H264-SVC drei unterschiedliche Implementierung für qualitative Skalierbarkeit.
+\parencite[10]{Unanue.2011}
+
+Die Basisimplementation ist das sogenante Coarse-grain Quality Scalable Coding (CGS). Dies kann als Sonderfall der 
+spatialen Skalierbarkeit angesehen werden. Zuerst wird aus dem Videoeingangsignal der Baselayer mit geringer 
+Qualität (z.\,B. Bitrate) generiert. Anschließend werden in nachfolgenden Enhancementlayern die Differenz 
+zwischen dem I-Frame des Originalvideos und dem I- Frame des vorherigem Layers mit festen Bitraten kodiert
+\parencite[4]{WienNeu.2007}. Innhalb der GOP werden nur die Referenzbilder im eigenen Layer kodiert. 
+Referenzierungen zwischen den einzelnen Layern findet nichts statt.\parencite[8f]{SchwarzNeu.2007}. 
+Skalierbarkeit wird in diesem Fall durch das komplette Entfernen einzelner Enhancementlayer erreicht, wodurch
+allerdings die Flexibilität und Effizienz eingeschränkt ist. \parencite[2]{Gupta.2012}
+Die Anzahl der Layer ist auf bestimmte Bitraten beschränkt und der Wechslen zwischen verschiedenen Layern ist
+nur an an den GOP-Grenzen bzw. I-Frames möglich \parencite[7]{Shahid.2010}.
+
+Eine verbesserte Implementation ist das sogannte Medium Grain Scalability (MGS), bei welchem innerhalb der GOP 
+des Baselayers auch auf die Referenzframes des nachfolgendem Enhancementlayers zugegriffen werden kann. 
+Dies erlaubt eine flexiblere Skalierbarkeit, erhöht aber die Fehleranfälligkeit.
+\parencite[8]{Unanue.2011}
+
+Die dritte Implementation ist die sogannte Fine Grain Scalability (FGS). Diese Art der Skalierung baut auf 
+CGS auf und verfeinert diese Methode. Die Bitrate der einzelnen Layer wird dynamisch an die aktuell verfügbare
+Bandbreite angepasst. Referenzierung einzelner Frames innerhalb der GOP wird nur im Baselayer durchgeführt.
+\parencite[8]{Unanue.2011}
+
+\section{H264-SVC mit MPEG DASH}
+MPEG DASH (Dynamic Adaptive Streaming over HTTP) definiert ein HTTP-basierendes Streamingverfahren.  
+\parencite[1]{FraunhoferWS.2012}. Durch die Verwendung von HTTP gegenüber anderen Protokollen wie
+RTP ergeben sich mehrere Vorteile. In vielen Einsatzbereichen (z.\,B. Unternehmen) sind aus Sicherheitsgründen 
+nur absolut notwenige Ports geöffnet, unter anderem HTTP auf Port 80. Zusätzlich entfällt die 
+Auslieferung der Streaminginhalte über einen dedizierten Streamingserver. Stattdessen können reguläre Webserver
+zur Ausliferung benutzt werden. Dadurch sinken für Streaminganbieter die Kosten für die Auslieferung des Contents
+\parencite[3]{Yago.2011}.
+
+Zur Auslieferung des Videocontents spezifiziert MPEG DASH ein XML-Dokument, das sogenannte Media Presentation Document 
+(MPD), welches die einzelnen Segmente der Videodatei definiert und referenziert. Auf diese einzelnen Segmente kann 
+per HTTP-GET zugegriffen werden \parencite[1]{FraunhoferWS.2012}.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.99\textwidth]{bilder/mpegDashSVC.jpg}
+	%\caption[base2enhancementlayers]{MPG DASH 
+	%\\ Abbildung nach \textit{H.264 and MPEG-4 Video Compression Seite, 2008, Seite 143}}	
+	\caption[Media Presentation Document und H264-SVC]{Media Presentation Document und H264-SVC \\ 
+	(Eigene Abbildung nach \parencite{FraunhoferWS.2012})}	
+	\label{fig:mpegdash}
+\end{figure}
+
+Jedes in der MPD definierte Segment besteht aus einer Abfolge von Zeiteinheiten bzw. Periods, deren Intervall beliebig 
+gewählt werden kann. In meisten Fällen beträgt dieses Intervall 2 bis 10 Sekunden. Jede Zeiteinheit besteht aus einem 
+oder mehreren Adaptationsets z.\,B. jeweils für die jeweiligen Audiodaten, Videodaten oder Untertitel.
+Jedes Adaptionset besteht wiederum aus verschiedenen Representationen für unterschiedliche Endgeräte (z.\,B. 
+Unterscheidung via Bitrate oder Auflösung). In den einzelnen Representationen werden jeweils wiederum einzelne 
+Segmente gespeichert, die durch eine eigene URL per HTTP-GET aufrufbar 
+sind \parencite[1]{FraunhoferWS.2012}.
+
+Durch diese modulare Struktur eignet sich MPEG DASH sehr gut zur Auslieferung von H264-SVC enkodierte Videoströmen. 
+Die einzelnen Baselayer und Enhancementlayer können jeweils in eigene Representationen gespeichert werden
+und innheralb der Adaptationsets referenziert werden. \parencite[14]{Yago.2011}.
+
+Die Zuordnung der einzelnen Layer erfolgt dabei über zusätzliche Attribute in der MPD-Datei. Jede Representation, 
+die ein Layer definiert, erhält ein ID-Attribut und ein DependencyId -Attribut. Dieses gibt an auf welche vorherige
+Layer, sich dieser Layer bezieht und welche zuvor dekodiert werden müssen\parencite[16]{Yago.2011}.
+
+
+\chapter{H264-SVC Hands-on}
+
+\section{SVC-Referenzcodec}
+Zur Evaluation der H264-SVC-Erweiterung wird der JSVM-Codec (Joint Scalable Video Model) verwendet. 
+Dieser ist der Referenzcodec des Joint Video Team (JVT), der ISO/IEC Moving Pictures Experts Group (MPEG) und 
+der ITU-T Video Coding Experts Group (VCEG). Neben dem Encoder und Decder sind im JMVC-Softwarepakets auch 
+Multiplexer und Testprogramme enthalten.
+
+Das JMVC-Softwarepaket ist im Quelltext frei verfügbar. Der Quelltext für das Softwarepaket ist in C++ 
+geschrieben und auf dem Webspace der Rheinisch-Westfälische Technische Hochschule Aachen (RWTH-Aachen) 
+in einem CVS-Repository gehostet. Um dieses Abzurufen ist eine geeigneten CVS-Software wie Tortoise 
+notwendig 
+
+Die hier vewendete Version des Encoder ist die Version 9.19.14. 
+
+\begin{table}[htb]
+\centering	
+	\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} }
+			\textbf{Autentifzierungstyp}& pserver \\
+			\textbf{Hostadresse}& garcon.ient.rwth-aachen.de \\
+			\textbf{CVS-Pfad}& /cvs/jvt \\
+			\textbf{Benutzername}& jvtuser \\
+			\textbf{Passwort}& jvt.Amd.2 \\
+			\textbf{Modulname}&jsvm oder jsvm_red \\			
+	\end{tabular}
+	\caption{Zugangsdaten für das CVS-Repository der RWTH Aachen}
+	\label{tab:TabelleCVS}
+\end{table}
+
+\subsection{Installation}
+Nach dem Download aus dem CVS der RWTH-Aachen befindet sich der Quellcode mit allen benötigen 
+Klassen und Bibliotheken im Unterordner \textit{jsvm/h264Extension/build/windows}. Zur Vereinfachung der 
+Installation werden bereits vorkonfigurierte Projektmappen für Microsoft Visual Studio mitgeliefert. 
+Nach Öffnen der Projektmappe in Visual Studio wird mit der Menüoption \textit{Create Batch/ 
+Projektmappe erstellen} der Quellcode kompiliert.
+Nach erfolgreichem Kompilieren sind alle ausführbaren Progamme im Unterordner \textit{jmvc/bin} zu 
+finden.
+
+\subsection{Videodateien}
+Der JSVM-Codec unterstützt als Eingabeformat nur unkomprimiertes YUV-Video. Zusätzlich müssen diese 
+für die jeweiligen Layer vorab in der gewünschten Auflösung der Layer kodiert werden. 
+Die im Test verwendeten Beispielvideodatein befinden sich auf dem Webspace der TU-München und können
+unter folgender URL heruntergeladen werden \url{http://nsl.cs.sfu.ca/video/library/tu-muenchen.de/}.
+Weitere Testvideo können unter folgender URL heruntergeladen 
+werden\url{ftp://ftp.tnt.uni-hannover.de/pub/svc/testsequences/}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{bilder/encoder/inputvideo.jpg}
+	%\caption[H264/AVC-Enkoder \newline \textit{Quelle: H.264 and MPEG-4 Video Compression, 2008}]{H264/AVC-Enkoder}
+	\caption[Das Quellvideo "`Park"' in unterschiedichen Auflösung]{Das Quellvideo "`Park"' in 180p (a), 360p (b) 
+	und 720p (c) Auflösung}	
+	\label{fig:inputvideo}
+\end{figure}
+
+Der Referenzeencoder benötig für die Erstellung eines beliebigen skalierbaren Videostroms mehrere Versionen eines 
+Quellvideos, das sich in Bezug auf Bildgröße, Framerate oder Bildqualität unterscheidet. Da diese unterschiedlichen
+Versionen meist nicht vorliegen, besitzt der Referenzencoder bereits ein Unterprogramm zur Erstellung dieser
+Videodateien. Das Programm heißt "`DownConvertStatic"' und wird mit folgender Syntax über die 
+Komoandozeile aufgerufen:
+
+\begin{lstlisting}[label=DownConvertStatic,caption=Aufruf DownConvertStatic ,captionpos=b,breaklines=true,mathescape=true]
+$\textbf{DownConvertStaticd}$ HAuflösung VAuflösung Input.yuv HZielAuflösung 
+VeZielAuflösung Output.yuv 
+\end{lstlisting}
+
+Anschließend befinden neben der urpsünglichen YUV-Datei weitere Videodatein mit unterschiedlicher spatialer 
+Qualität im aufrufenden Verzeichniss.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{bilder/encoder/downconvert.jpg}
+	\caption[Erzeugung von 360p und 180p YUV-Videodateien]{Erzeugung von 360p und 180p YUV-Videodateien}
+	\label{fig:referenzencoder}
+\end{figure}
+
+\subsection{Enkodieren}
+Der JSVM-Codecs unterstützt zwei Betriebsarten. Einerseits die Funktionsweise als Singlelayer Encoder, bei
+welchem er sich wie ein regulärer H264/AVC-Encoder verhält und nur  H264/AVC-Videodatein erstellt. 
+Andererseist unterstüzt er auch die Erzeugung von skalierbaren Videosträmen in H264-SVC.
+
+Zur Erzeugung eines skalierbaren Videostroms in H264-SVC werden mehrere 
+Konfigurationsdateien benötigt. Einerseits wird eine allgemeine Konfigurationsdatei benötigt, in welcher 
+die Videoinformationen der Quelldatei definiert werden.
+Dazu zählen u.a. der Dateiname, die Auflösung, die Anzahll der zu enkodierenden Frames und die Größe der 
+Group of Pictures. Zusätzlich werden die layerspezifischen Konfigurationsdateien in dieser Konfigurationsdatei 
+verlinkt.   
+
+\begin{lstlisting}[label=ConfigEncoder,caption=Konfigurationsdatei des Encoders ,captionpos=b,breaklines=true,mathescape=true]
+
+OutputFile          test.264   # Bitstream file
+FrameRate           30.0       # Maximum frame rate [Hz]
+FramesToBeEncoded   150        # Number of frames
+GOPSize             16         # GOP Size (at maximum frame rate)
+BaseLayerMode       2          # Base layer mode
+SearchMode          4          # Search mode
+SearchRange         32         # Search range (Full Pel)
+NumLayers           1          # Number of layers
+LayerCfg            layer0.cfg # Layer configuration file
+\end{lstlisting}
+
+Weiterhin wird für jeden Layer eine zusätzliche Konfigurationsdatei benötigt. In dieser spezifischen Datei werden 
+unter anderem der Dateiname der herunterskalierten Quelldatei, die Auflösug, Bitrate und die Framerate für diesen 
+Layer definiert.
+
+\begin{lstlisting}[label=ConfigLayer,caption=Konfigurationsdatei für einen Layer ,captionpos=b,breaklines=true,mathescape=true]
+
+InputFile           BUS_CIF30.yuv  # Input  file
+SourceWidth         352            # Input  frame width
+SourceHeight        288            # Input  frame height
+FrameRateIn         30             # Input  frame rate [Hz]
+FrameRateOut        30             # Output frame rate [Hz]
+InterLayerPred      2              # Inter-layer Pred.
+
+\end{lstlisting}
+
+Der Encoder H264AVCEncoderLibTestStatic wird über folgenden Befehl über die Komandozeile aufgerufen:
+
+\begin{lstlisting}[label=Encoder,caption=Aufruf H264AVCEncoderLibTestStatic ,captionpos=b,breaklines=true,mathescape=true]
+$\textbf{H264AVCEncoderLibTestStaticd}$ –pf Konfigurationsdatei.cfg
+\end{lstlisting}
+
+Danach analysiert der Encoder die Konfigurationsdatei und enkodiert die einzelnen Layer. Der Baselayer wird 
+regulär in H264/AVC enkodiert, während die Enhancementlayer in H264-SVC enkodiert werden. 
+Wenn die Enkodierung erfolgreich abgeschlossen ist, gibt er Encoder anschließend eine Übersicht über die 
+enkodierten und eingebetteten Layer aus. In der Übersicht wird sowohl die spatialen Layer (Auflösung), die 
+Framerate (temporale Auflösung) angezeigt mit Übersicht der einzelnen Bitraten und PSNR-Werten. 
+Die entsprechende enkodierte Zieldatei befindet sich im Verzeichniss des Enkoders unde trägt die 
+Dateiendung .h264.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{bilder/encoder/encoderDone2.jpg}
+	\caption[Spatiale und Temporale Enkodierung]{Spatiale und Temporale Enkodierung}
+	\label{fig:encoderDone}
+\end{figure}
+
+\subsection{Dekodieren}  
+Der Referenzcodec unterstützt nur die Dekodierung des H264-SVC Videostroms zu YUV. Dabei wird aus allen 
+eingebetteten Layern das Ausgangsvideo rekonstruiert und als unkomprimiertes YUV-Video angelegt. 
+Die Dekodierung erfolgt mit dem Programm \\ H264AVCDecoderLibTestStaticd mit folgendem Aufruf auf der 
+Kommandozeile. 
+
+\begin{lstlisting}[label=Encoder,caption=Aufruf H264AVCDecoderLibTestStaticd ,captionpos=b,breaklines=true,mathescape=true]
+$\textbf{H264AVCDecoderLibTestStaticd}$ InputDatei.h264 OutputDatei.yuv 
+\end{lstlisting}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{bilder/encoder/dekodieren.jpg}
+	\caption[Dekodierung und Rekonstruktion des Videostroms]{Dekodierung und Rekonstruktion des Videostroms}
+	\label{fig:dekodieren}
+\end{figure}
+
+\subsection{Layerstruktur anzeigen und extrahieren}
+Der JSVM-Codec bietet mit Hilfe des Pgramms BitStreamExtractorStaticd die Möglichkeit Layer zu 
+extrahieren und daraus eine neue H264-SVC-Datei zu erstellen, die außschließlich die extrahierten
+Layern beeinhaltet. Zusätzlich bietet dieses Tool die Möglichkeit die Layerstruktur zu Debugzwecken anzuzeigen.
+Der Aufruf erfolgt auf der Kommandozeile folgendermaßen:
+
+\begin{lstlisting}[label=Encoder,caption=Aufruf BitStreamExtractorStaticd ,captionpos=b,breaklines=true,mathescape=true]
+$\textbf{BitStreamExtractorStaticd}$ InputDatei.svc
+\end{lstlisting}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{bilder/encoder/bitstreamdebug.jpg}
+	\caption[Anzeige der Layerstruktur mit Hilfe von BitStreamExtractorStaticd]{Anzeige der Layerstruktur mit Hilfe von BitStreamExtractorStaticd}
+	\label{fig:bitstreamdebug}	
+\end{figure}
+
+Anschließend erhält man eine Übersicht über alle enthaltenen Layer und deren Enkodierdetails.
+Zur Extraktion mehrer Layer, z. B. in diesem Fall Layer 0 bis 5 ruft man das gleiche Programm mit
+folgender Syntax von der Kommandozeile auf:
+
+\begin{lstlisting}[label=Encoder,caption=Aufruf BitStreamExtractorStaticd ,captionpos=b,breaklines=true,mathescape=true]
+$\textbf{BitStreamExtractorStaticd}$ InputDatei.svc OutputDatei.svc –sl 5
+\end{lstlisting}
+
+Als Resultat erhält man eine neue valide H264-SVC-kodierte Videodatei, die nur die Layer 0 bis 5 enthält.
+
+\begin{figure}[htb]
+	\centering	
+	\includegraphics[width=0.9\textwidth]{bilder/encoder/layerextrahiert.jpg}
+	\caption[Anzeige der geänderten Layerstruktur mit Hilfe von BitStreamExtractorStaticd]{Anzeige der geänderten Layerstruktur mit Hilfe von BitStreamExtractorStaticd}
+	\label{fig:layerextrahiert}
+\end{figure}
+
+\subsection{Evaluation}
+Der JSVM-Referenzcode ist ein sehr vielseitiges Tool und derzeit die einzige frei verfügbare Anwendung, um
+H264-SVC Videodateien zu erzeugen. Die Installation ist durch ein vorkonfiguriertes Visualstudioprojekt 
+sehr einfach und funktioniert problemlos. 
+
+Die Arbeit mit dem Codec ist über die Kommandozeile und Eingabeparameter nicht sehr komfortable, 
+vereinfacht aber dafür die Einbindung in andere Programme. Die mitgelieferte Dokumentation und
+Beispielprojekte machen es relativ einfach möglich selber mit dem Codec zu experimentieren. 
+Allerdings gibt der Codec selbst nur wenig Hinweis und Fehlermeldungen, warum manche Settings 
+nicht funktionieren und zum Ablauf des Enkodierdurchlaufs führen.   
+
+Das große Problem des JSVM-Codecs sind die Geschwindigkeit der Enkodierung und die möglichen 
+Ausgangsformate. Diese beiden Aspekte machen jegliche Verwendung in Realanwendungen derzeit unmöglich.
+Der Codec läuft nur auf einem Prozessorkern und nutzt dadurch die Möglichkeiten modernern PCs
+nicht. Dadurch ist die Enkodierung sehr langsam udn zeitraubend.
+
+Bei regulärem CIF und QCIF Videos betrug die Geschwindgkeit ca. 5 bis 6 Sekunden pro Frame. Bei 
+Testreihen mit HD-Material dauerte die Enkodierung von 100 Frames mehr als fünf Stunden. 
+Zusätzlich unterstützt der Codec derzeit als Ein- und Ausgabeformat nur YUV-Video wodurch eine sinnvolle 
+Speicherung des Eingangsmaterials bei HD-Auflösung nicht möglich ist.
+
+Der JSVM-Referenzcode ist daher er als Proof of Concept zu verstehen, um interessierte Anwender mit 
+H264-SVC bekannt zu machen und diesen eine technische Basis zum Experimentieren zu geben. 
+
+\section{Scalable Streaming Projekt}
+
+\subsection{Einleitung}
+Im Folgenden wird ein Projekt von Siyuan Xiang vorgestellt, das das Konzept und die Implementierung 
+eines Frameworks für adaptives skalierbares Video Streaming über HTTP beschreibt. Das Projekt gewann 
+im Mai 2011 den dritten Platz beim BCNET Digital Media Challenge Studenten Wettbewerb in 
+Vancouver \parencite[]{Xing.2011}.
+
+Zur Zeit werden auf kommerziellen Webseiten meist zwei Techniken eingesetzt, um Video über HTTP zu 
+streamen. Zum einen gibt es Progressive Download, wie es zum Beispiel bei den Videoplattformen YouTube 
+und Vimeo verwendet wird, des Weiteren gibt es Adaptive Streaming, was in verschiedenen Implementierungen 
+vorliegt, wie zum Beispiel Microsoft Smooth Streaming, Apple HTTP Live Streaming oder Adobe HTTP Dynamic 
+Streaming.
+
+Durch adaptives Streaming kann die Video Bitrate dynamisch angepasst werden, um verschiedene Bandbreiten 
+mit einem passenden Videostream zu bedienen und  verhindert dabei, dass zu viel Daten vorgeladen werden 
+müssen, wenn mehr Bandbreite zur Verfügung steht. Dabei kann es jedoch vorkommen, dass Daten umsonst 
+geladen werden.
+Video Server, die adaptives Streaming anbieten, müssen verschiedene Kopien des selben Videos für 
+verschiedene Bitraten und Bandbreiten bereitstellen, um verschiedene Clients optimal bedienen zu können. 
+Dadurch ist viel Speicherplatz auf den Servern nötig und Cachetreffer werden verringert. Durch Scalable 
+Video Coding können diese Nachteile beseitigt werden. 
+Laut \parencite[]{Sanchez.2011} können bis 56\% an Speicherplatz 
+auf den Servern durch SVC eingespart werden.
+
+\subsection{Projektkurzübersicht}
+
+\begin{enumerate}
+  \item Ein Extractor wurde konzipiert und implementiert, um H.264/SVC Bitstream Abstraction Layer (NAL) 
+  		Einheiten zu analysieren und um den enkodierten Bitstream in Layer-Segmente aufzuteilen.
+  \item Ein Rate-Adaption-Algorithmus wurde konzipiert und implementiert, um die Video Bitrate an die 
+  		verschiedenen Bandbreiten und Client-Anforderungen anzupassen.#
+  \item Ein einfacher Video-Player wurde mittels OpenSVC-Decoder und SDL (Simple DirectMedia Layer) 
+  		implementiert, um die kommerzielle Nutzung darzustellen.
+\end{enumerate}
+
+\subsection{Framework}
+
+\begin{figure}[htb]
+	\centering	
+	\includegraphics[width=0.6\textwidth]{bilder/projekt/player.png}
+	\caption[Aufbau des Videoplayers]{Aufbau des Videoplayers}
+	\label{fig:videoplayer}
+\end{figure}
+
+Der Video-Player besteht aus den drei Komponenten Rate-Adaption, Decoder und Display.
+Der Rate-Adaption-Algorithmus entscheidet, welche Video-Version beziehungsweise welcher Layer angefragt 
+werden soll und sendet einen HTTP-Request an den Streaming-Server, welcher mit den angefragten Segmenten 
+antwortet. Die empfangenen Segmente werden im Segment-Buffer gespeichert. Im Decoder werden die Segmente 
+so schnell wie möglich dekodiert und daraufhin in den Picture-Buffer abgespeichert. Die Display-Komponente 
+stellt die Bilder aus dem Picture-Buffer in einer konstanten Bildwiederholungsrate dar.
+
+Der komplette Prozess des adaptiven skalierbaren Video-Streaming über HTTP wird in der Projektdokumentation 
+anhand eines spezifischen Beispiels dargestellt. Eine Übersicht der Komponenten:
+
+\begin{figure}[htb]
+	\centering	
+	\includegraphics[width=0.75\textwidth]{bilder/projekt/framework.png}
+	\caption[Aufbau des Frameworks]{Aufbau des Frameworks}
+	\label{fig:framework}
+\end{figure}
+
+Als Beispiel-Video dient Big Buck Bunny, ein Open-Movie-Projekt, in einer Ausgangsauflösung von 1080x720. 
+Im ersten Schritt werden aus dem Video durch Downsampling zwei neue Versionen des Videos erstellt, welche 
+auf die Auflösung 640x360 und 320x180 durch das Downsampling reduziert wurden. Dann wird jedes Video in 
+kleinere Segmente mit jeweils 17 Bildern unterteilt. Da die Bildwiederholungsrate 24 Bilder pro Sekunde ist, 
+hat jedes Segment eine Dauer von ca. 0,7 Sekunden, wenn die ersten 3400 Bilder genutzt werden.
+Weiterhin wird jedes Segment mit dem SVC-Encoder (JSVM) enkodiert. Bei diesem Beispiel werden drei Auflösungen 
+verwendet und jede Auflösung hat zwei Quality-Layer. Die folgende Tabelle fasst die Bitrate- und 
+Video-Quality-Layer zusammen. Eine Audiospur wurde hierbei nicht berücksichtigt.
+
+\begin{table}
+	\centering
+    \begin{tabular}{llll}    
+        Resolution & Avg. Bitrate (Kbps) & Y-PSNR & Layer Index \\ \hline
+        320x180    & 112.84              & 35.47  & 1           \\ 
+        320x180    & 238.94              & 39.44  & 2           \\ 
+        640x360    & 363.82              & 35.96  & 3           \\ 
+        640x360    & 673.68              & 39.64  & 4           \\ 
+        1080x720   & 955.84              & 36.48  & 5           \\ 
+        1080x720   & 1997.37             & 40.05  & 6           \\      
+    \end{tabular}
+    \caption{Übersicht der Layer der enkodierten Datei}
+\end{table}
+
+Im nächsten Schritt werden im Extractor die NAL-Units eines Layers mit dem gleichen Layer-Index aus den 
+Segment-Frames extrahiert und zusammen in einer Layer-Segment-Datei gespeichert. Außerdem wird die Struktur 
+der NAL-Units eines Segments analysiertund in einer Textdatei gespeichert.
+Ein einfacher HTTP-Server kann ähnlich wie beim Progessive Download als Streaming Server verwendet werden. 
+Für dieses Projekt wurde lighttpd als Web-Server benutzt. Dieser wird auch von YouTube eingesetzt. 
+Wichtig ist die server.max-keep-alive-requests Option von lighttpd, welche angibt, wie viele Anfragen vom 
+Server bearbeitet werden können, bevor der Server die Verbindung schließt, da der Client Piplining benutzt, 
+um die Layer-Segmente anzufragen.
+Wenn der Video-Player die Wiedergabe startet, erhält er zuerst Informationen über die Anzahl der Layer und 
+die durchschnittliche Video-Bitrate.
+
+Im letzten Schritt sucht der Player/Rate-Adaption-Algorithmus die passendsten Layer bei Berücksichtigung von 
+Bandbreite, Bildschirmgröße des Geräts und Rechenleistung. Zum Beispiel ein Smartphone mit einem kleinen 
+Bildschirm wird den “low”-Layer mit einer Auflösung von 320x180 anfragen. Im Gegenteil wird ein Laptop mit 
+großem Bildschirm und mehr Rechenleistung zum Dekodieren die Layer “low” bis “high” anfragen, um die 
+bestmögliche Qualität darzustellen.
+ 
+\section{Weitere Implementierungen}
+
+\subsection{Google Talk}
+Google Talk und Google Hangout sind Instant Messaging-Dienst, die neben Textmessaging auch Videochat
+für eine oder mehrere Personen anbieten. Google benutzt dabei eine lizensierte  Videokonferenzsoftware 
+von Vidyo. 
+
+Derzeit muß zur Nutzung noch ein Plugin installiert werden, welches in Zukunft durch die 
+Verwendung von nativen WebRTC abgelöst werden soll.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{bilder/hangouts.jpg}
+	\caption[Google Hangouts]{Google Hangouts}
+	\label{fig:hangouts}
+\end{figure}
+
+Videochat in Google Talk und Google Hangout unterstützt bis jetzt den H264-SVC, H264/AVC und H263 
+Video-Codec, mit dem Scalable Baseline (SVC) und Baseline (AVC) Profile wie in der H/264-Spezifikation 
+beschrieben. H264-SVC wird, wenn verfügbar, vorrangig benutzt. H263 ist nur aus Kompatibilitätsgründen 
+angeboten.
+ 
+Die folgende Abbildung zeigt die Liste der verwendeten Codecs und deren spatiale und temporale Auflösung.
+
+\newpage
+
+\begin{lstlisting}[label=Verwendete Codecs ,captionpos=b,breaklines=true,mathescape=true]
+<payload-type id="99" name="H264-SVC">
+    <parameter name="width" value="640"/>
+    <parameter name="height" value="400"/>
+    <parameter name="framerate" value="30"/>
+  </payload-type>
+  <payload-type id="96" name="H264-SVC-draft-02">
+    <parameter name="width" value="640"/>
+    <parameter name="height" value="400"/>
+    <parameter name="framerate" value="30"/>
+  </payload-type>
+  <payload-type id="97" name="H264">
+    <parameter name="width" value="640"/>
+    <parameter name="height" value="400"/>
+    <parameter name="framerate" value="30"/>
+  </payload-type>
+  <payload-type id="98" name="H263">
+    <parameter name="width" value="640"/>
+    <parameter name="height" value="400"/>
+    <parameter name="framerate" value="30"/>
+  </payload-type>
+  
+\end{lstlisting}
+
+\subsection{MainConcept SVC}
+MainConcept bietet einen H264-SVC-Decoder im Rahmen ihres kostenpflichtigen MainConcept SDKs an. In diesem 
+sind FFDShow-Filter und Dekoder für verschiedene Inputformate enthalten. Zum Testen dieser Filter 
+bietet MainConcept eine kostenlose Showcaseapplikation als Download an. Diese kann unter folgender URL 
+bezogen werden \url{http://www.mainconcept.com/en/products/sdks/others/showcase.html}.
+Innerhalb der Showcaseapplikation wird in jedes Video ein Wasserzeichen eingeblendet.
+
+Der SVC-Decoder bietet sowohl die Möglichkeit alle spatialen Layer gleichzeitig anzuzeigen als auch selektiv nur
+einen bestimmten Layer anzuzeigen, z.B. nur Layer 0. Zusätzlich kann die Layerauswahl anhand der eingebetteten
+temporalen Layer z.B. Layer mit der Framerate 7.5 Frames pro Sekunde erfolgen.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{bilder/mainConcept.jpg}
+	\caption[MainConcept SVC-Dekoder]{MainConcept SVC-Dekoder}
+	\label{fig:mainConcept}
+\end{figure}
+
+\subsection{OpenSVC Decoder}
+ Der OpenSVC Decoder kann auf folgender Website heruntergeladen werden 
+ (\url{http://sourceforge.net/projects/opensvcdecoder/}) Im Lieferumfang befinden sich im Verzeichnis  
+ "`Mplayer"' eine speziell angepasste Version des MPplayers. Dieser lässt sich sowohl unter Windows mit Hilfe
+ von MinGW als auch unter Linux installieren.
+ 
+Die Konfiguration der Installation unter Linux erfolgt durch den Aufruf des Befehls "`configure --enable-svc"' 
+im Verzeichnis Mplayer der heruntergeladenen Datei. Die Installation wird durch die Befehle 
+"`make install"' und anschließend "`install"' abgeschlossen.
+
+Der Aufruf der Videodatei und die Auswahl des Layers erfolgt auf der Kommandozeile mit folgender Syntax: 
+\\
+\begin{lstlisting}[label=Encoder,caption=Aufruf OpenSVC Decoder ,captionpos=b,breaklines=true,mathescape=true]
+$\textbf{mplayer}$ -fps 25 InputVideodatei.264 setlayer X
+\end{lstlisting}
+
+\chapter{Konklusion}
+Die Verwendung von H264-SVC zur Distribution von Videoformaten bringt entscheidende Vorteile gegenüber 
+herkömmlichen Verfahren, wie das Simulcastverfahren, also der Übertragung mehrer unabhängiger Videoströme 
+in unterschiedlicher Qualität.
+
+Im praktischen Anwendungsfall, dass gleichzeitig ein Videostrom an mobile Endgeräte, HD-Ready-Geräte und 
+Geräte mit FullHD- Auflösung übertragen wird, braucht man durch die Nutzung von spatialen Enhancemenlayern 
+keine dedizierten Videodateien für bestimmte Endgeräteklassen zu enkodieren und archivieren. 
+Stattdessen wird ein Baselayer für alle Endgeräte enkodiert, der nur den Videostrom in SD-Auflösung enthält. 
+Mobile Endgeräte dekodieren ausschließlich diesen Baselayer. Geräte mit HD-Ready-Auflösung dekodieren
+zusätzlich den ersten Enhancementlayer in HD-Ready-Auflösung, der die Differenz zum Baselayer enthält.
+Für Geräte mit FullHD-Display werden alle Enhancementlayer dekodiert. Daduch ist man sehr flexibel in Hinblick 
+auf die entsprechenden Endgeräte und kann sehr einfach für weitere Geräte zusätzliche Enhancementlayer definieren.
+\parencite[602]{Sader.2008}
+
+Nachteilig an H264-SVC ist allerdings, dass es derzeit keine große Anzahl an kommerziellen Anbieter von 
+SVC-basierten Applikationen gibt, die den kompletten Worklfow von Enkodierung, Übertragung und Dekodierung abbilden. 
+Dies ist daran zu begründen, dass in der Regel nicht SVC-basierende Lösungen einfacher zu implementieren sind, da
+sie auf etablierten Techniken wie reguläres H264/AVC basieren und dadurch mittlerweile einen gewissen Reifegrad 
+erreicht haben. 
+
+Allerdings schreitet die Diversifikation der Endgeräte und Übertragungsmedien weiter voran, sodass auf lange Sicht
+durch Simulcast nicht alle Geräteklassen, Qualitätsstufen und Übertragungsmedien abbildbar sind und somit nicht 
+für jedes Gerät die optimale Videoübertragung verfügbar ist. \\ 
+Auf lange Sicht wird daher der Bedarf an skalierbaren Videocodecs weiter steigen und damit wird auch die Verbeitung 
+von H264-SVC zunehmen \parencite[603]{Sader.2008}
+
+\appendix
+%\nocite{*}
+\listoffigures
+\pagenumbering{Alpha}
+\printbibliography
+
+\end{document}

@@ -1,0 +1,65 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Aktuelle Trends und Herausforderungen}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}H264-SVC in a Nutshell}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Allgemein}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Abgrenzung zu Adaptive Streaming}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Videokodierung mit H264/AVC}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Videokodierung mit H264-SVC}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Baselayer und Enhacementlayer}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Spatiale Skalierbarkeit}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Temporale Skalierbarkeit}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.4}Qualitative Skalierbarkeit}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}H264-SVC mit MPEG DASH}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}H264-SVC Hands-on}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}SVC-Referenzcodec}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Installation}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Videodateien}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Enkodieren}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Dekodieren}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.5}Layerstruktur anzeigen und extrahieren}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.6}Evaluation}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Scalable Streaming Projekt}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Einleitung}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Projektkurz\"ubersicht}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Framework}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Weitere Implementierungen}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Google Talk}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}MainConcept SVC}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}OpenSVC Decoder}{28}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Konklusion}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Abbildungsverzeichnis}{\@Alpha \c@page }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Literatur}{\@Alpha \c@page }

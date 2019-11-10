@@ -1,0 +1,51 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Arten der Skalierbarkeit}}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Funktionsweise eines H264/AVC-Enkoders}}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Base- und Enhancementlayer}}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Enkodierung von Baslayer und Enhancementlayer }}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Dekodierung von spatialen Enhancementlayern}}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Temporale Skalierbarkeit}}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Media Presentation Document und H264-SVC}}{13}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Das Quellvideo "`Park"' in unterschiedichen Aufl\"osung}}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Erzeugung von 360p und 180p YUV-Videodateien}}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Spatiale und Temporale Enkodierung}}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Dekodierung und Rekonstruktion des Videostroms}}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Anzeige der Layerstruktur mit Hilfe von BitStreamExtractorStaticd}}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Anzeige der ge\"anderten Layerstruktur mit Hilfe von BitStreamExtractorStaticd}}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Aufbau des Videoplayers}}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces Aufbau des Frameworks}}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.9}{\ignorespaces Google Hangouts}}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.10}{\ignorespaces MainConcept SVC-Dekoder}}{28}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

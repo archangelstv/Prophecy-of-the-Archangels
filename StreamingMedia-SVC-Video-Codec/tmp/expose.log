@@ -1,0 +1,489 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.17)  14 DEC 2012 12:13
+entering extended mode
+**expose.tex
+("D:\Hochschule\WS 12 13\IMMS\Expose\expose.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("D:\Hochschule\WS 12 13\IMMS\Expose\header.tex"
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
+Document Class: scrbook 2012/03/08 v3.10a KOMA-Script document class (book)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+Package: scrkbase 2012/03/08 v3.10a KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+Package: scrbase 2012/03/08 v3.10a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+Package: scrlfile 2011/03/09 v3.09 KOMA-Script package (loading files)
+
+Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
+Package: tocbasic 2011/05/30 v3.09a KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 117.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 118.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 119.
+Package scrbook Info: You've used obsolete option `12pt'.
+(scrbook)             \KOMAExecuteOptions{fontsize=12pt} will be
+(scrbook)             used instead.
+(scrbook)             You may simply replace `12pt'
+(scrbook)             by `fontsize=12pt'.
+Class scrbook Info: You've used standard option `openany'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `open=any'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `open=any' there
+(scrbook)           instead of `openany', too.
+Class scrbook Info: File `scrsize12pt.clo' used to setup font sizes on input li
+ne 1364.
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize12pt.c
+lo
+File: scrsize12pt.clo 2012/03/08 v3.10a KOMA-Script font size class option (12p
+t)
+)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+Package: typearea 2012/03/08 v3.10a KOMA-Script package (type area)
+
+Package typearea, 2012/03/08 v3.10a KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+Package typearea Info: You've used standard option `pdftex'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `pagesize=pdftex'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `pagesize=pdftex' there
+(typearea)             instead of `pdftex', too.
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+DIV calculation for typearea with good linewidth.
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 9
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 398.33862pt
+(typearea)              DIV departure   = 0%
+(typearea)              \evensidemargin = 60.50955pt
+(typearea)              \oddsidemargin  = -5.88022pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 577.5pt
+(typearea)              \topmargin      = -18.25089pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 1177.
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count87
+\c@table=\count88
+\bibindent=\dimen102
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\ngermanb.ldf"
+Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count93
+\U@D=\dimen113
+)
+\l@naustrian = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 92.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count94
+\c@Blindtext=\count95
+\c@blind@countparstart=\count96
+\blind@countxx=\count97
+\blindtext@numBlindtext=\count98
+\blind@countyy=\count99
+\c@blindlist=\count100
+\c@blindlistlevel=\count101
+\c@blindlist@level=\count102
+\blind@listitem=\count103
+\c@blind@listcount=\count104
+\c@blind@levelcount=\count105
+\blind@mathformula=\count106
+\blind@Mathformula=\count107
+\c@blind@randomcount=\count108
+\c@blind@randommax=\count109
+\c@blind@pangramcount=\count110
+\c@blind@pangrammax=\count111
+)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\jurabib\jurabib.sty
+Package: jurabib 2007/03/17 v0.61beta Extended Citations
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count112
+\calc@Bcount=\count113
+\calc@Adimen=\dimen114
+\calc@Bdimen=\dimen115
+\calc@Askip=\skip47
+\calc@Bskip=\skip48
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count114
+\calc@Cskip=\skip49
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen116
+\extrarowheight=\dimen117
+\NC@list=\toks18
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
+\c@ibidem@author=\count115
+\c@multiple@author=\count116
+LaTeX Info: Redefining \jbarchnameformat on input line 1257.
+\jb@subarchitemwidth=\skip52
+\jb@subarchentrywidth=\skip53
+LaTeX Info: Redefining \jbapifont on input line 1529.
+\jb@urlfile=\write3
+
+("D:\Hochschule\WS 12 13\IMMS\Expose\expose.url")
+\jb@tempfile=\read1
+\c@jbbibcnt=\count117
+\c@jbbibcnta=\count118
+\c@idemcnt=\count119
+\c@bibnamereplace=\count120
+\c@citefull=\count121
+\c@opcit=\count122
+\c@jb@cites@in@footnote=\count123
+\jbbibhang=\skip54
+\bibnumberwidth=\skip55
+\jb@biblaw@entry@width=\skip56
+\jb@biblaw@item@width=\skip57
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3875.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3875.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3875.
+LaTeX Info: Redefining \cite on input line 4187.
+\jb@length@i=\skip58
+\jb@length@ii=\skip59
+\jb@length@iii=\skip60
+\jb@temptoks=\toks19
+\jbedwidth=\skip61
+\jb@ta=\toks20
+\jb@tb=\toks21
+
+Package jurabib Info: *** Local config file `jurabib.cfg' used ***
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\jurabib\jurabib.cfg
+File: jurabib.cfg jurabib local configuration file
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count124
+\float@exts=\toks22
+\float@box=\box27
+\@float@everytoks=\toks23
+\@floatcapt=\box28
+)
+\@float@every@table=\toks24
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty
+\wrapoverhang=\dimen118
+\WF@size=\dimen119
+\c@WF@wrappedlines=\count125
+\WF@box=\box29
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count126
+\lst@gtempboxa=\box30
+\lst@token=\toks26
+\lst@length=\count127
+\lst@currlwidth=\dimen120
+\lst@column=\count128
+\lst@pos=\count129
+\lst@lostspace=\dimen121
+\lst@width=\dimen122
+\lst@newlines=\count130
+\lst@lineno=\count131
+\lst@maxwidth=\dimen123
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count132
+\lst@skipnumbers=\count133
+\lst@framebox=\box31
+)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen124
+\captionmargin@=\dimen125
+\captionwidth=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count134
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+\c@subfigure=\count135
+\c@subtable=\count136
+)
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\endnotes\endnotes.sty
+\c@endnote=\count137
+\endnotesep=\dimen130
+\@enotes=\write4
+))
+("D:\Hochschule\WS 12 13\IMMS\Expose\expose.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=640.61084pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-15.36449pt
+* \headheight=18.125pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=99.58466pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count138
+\scratchdimen=\dimen131
+\scratchbox=\box32
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen132
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks28
+) (C:\Users\Martin\AppData\Roaming\MiKTeX\2.9\tex\latex\jurabib\dejbbib.ldf
+File: dejbbib.ldf jurabib German language definitions
+)
+
+Package jurabib Info: *** jurabib set up for babel ***
+
+\c@lstlisting=\count144
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+<img/svc1.jpg, id=1, 1065.9825pt x 517.935pt>
+File: img/svc1.jpg Graphic file (type jpg)
+ <use img/svc1.jpg>
+Package pdftex.def Info: img/svc1.jpg used on input line 34.
+(pdftex.def)             Requested size: 384.1096pt x 186.63031pt.
+ [1
+
+{C:/Users/Martin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <D:/Hoc
+hschule/WS 12 13/IMMS/Expose/img/svc1.jpg>] ("D:\Hochschule\WS 12 13\IMMS\Expos
+e\expose.aux") ) 
+Here is how much of TeX's memory you used:
+ 8065 strings out of 494045
+ 123011 string characters out of 3145966
+ 240844 words of memory out of 3000000
+ 11262 multiletter control sequences out of 15000+200000
+ 11031 words of font info for 29 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 42i,7n,60p,312b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Martin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
+ppen\ec\dpi600\ecrm1200.pk> <C:\Users\Martin\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecsx1728.pk>
+Output written on expose.pdf (2 pages, 153070 bytes).
+PDF statistics:
+ 102 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

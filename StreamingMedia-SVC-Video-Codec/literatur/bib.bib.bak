@@ -1,0 +1,305 @@
+% This file was created with JabRef 2.8.1.
+% Encoding: Cp1252
+
+@ARTICLE{Cho.2010,
+  author = {Chuan-Yu Cho},
+  title = {Overview on Scalable Video Coding - II},
+  year = {2010},
+  owner = {Martin},
+  timestamp = {2012.11.24},
+  url = {http://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=0CEkQFjAD&url=http%3A%2F%2Fvc.cs.nthu.edu.tw%2Fhome%2Fpaper%2Fcodfiles%2Fcycho%2F200507272019%2FOverview_on_Scalable_Video_Coding_-_II.ppt&ei=Hy6xUNTWMozLsgah54HIDg&usg=AFQjCNGqfVBjD4mUCdn9Bgt2g_Ra4WTP2w&sig2=znrFAqMNMSby8OaB9BpVEg&cad=rja}
+}
+
+@BOOKLET{Eisert.2006,
+  title = {Free View Point Video - der n\"achste Schritt in der Unterhaltungselektronik},
+  author = {Eisert, Peter and Kauff, Peter and Smolic, Aljoscha and Sch\"afer,
+	Ralf},
+  year = {2006},
+  owner = {Martin},
+  shorttitle = {Free View Point Video},
+  timestamp = {2012.11.12},
+  url = {http://iphome.hhi.de/eisert/papers/fktg2006.pdf},
+  urldate = {08.02.2010}
+}
+
+@ARTICLE{FraunhoferWS.2012,
+  author = {Heinrich Hertz Institut - Fraunhofer},
+  title = {Advanced MPEG Dash},
+  year = {2012},
+  owner = {Martin},
+  timestamp = {2012.11.25},
+  url = {http://www.hhi.fraunhofer.de/de/kompetenzfelder/image-processing/research-groups/multimedia-communications/advanced-mpeg-dash.html}
+}
+
+@BOOK{Hanzo.2007,
+  title = {Video compression and communications: From basics to H.261, H.263,
+	H.264, MPEG4 for DVB and HSDPA-style adaptive turbo-transceivers},
+  publisher = {Wiley},
+  year = {2007},
+  author = {Hanzo, Lajos and Cherriman, Peter J. and Streit, J\"urgen},
+  address = {Chichester},
+  edition = {2. ed.},
+  isbn = {9780470518496},
+  owner = {Martin},
+  price = {\pounds95,00},
+  shorttitle = {Hanzo, Cherriman et al. 2007 -- Video compression and communications},
+  timestamp = {2012.11.12},
+  url = {http://www.gbv.de/dms/ilmenau/toc/531727254.PDF / http://www.loc.gov/catdir/toc/ecip0720/2007024178.html / http://www.loc.gov/catdir/enhancements/fy0741/2007024178-d.html}
+}
+
+@ARTICLE{SchwarzWien.2009,
+  author = {Heiko Schwarz, Mathias Wien},
+  title = {The Scalable Video Coding Extension of the H.264/AVC Standard},
+  year = {2009},
+  owner = {Martin},
+  timestamp = {2012.11.24},
+  url = {http://ip.hhi.de/imagecom_G1/savce/downloads/2008_SP_Schwarz-Wien_SVCInANutshell.pdf}
+}
+
+@BOOK{Hohlfeld.2010,
+  title = {Crossmedia -s Wer bleibt auf der Strecke?: Beiträge aus Wissenschaft
+	und Praxis},
+  year = {2010},
+  author = {Ralf Hohlfeld},
+  owner = {Martin},
+  timestamp = {2012.11.14},
+  url = {http://books.google.de/books?id=bp1Jk31PkI4C\&pg=PA230}
+}
+
+@MISC{Hottong.2009,
+  author = {Hottong, Nikolaus},
+  title = {Digitale AV--Technik WS 09/10},
+  year = {2009},
+  owner = {Martin},
+  shorttitle = {Digitale AV--Technik},
+  timestamp = {2012.11.12}
+}
+
+@ARTICLE{Unanue.2011,
+  author = {Iraide Unanue, Iñigo Urteaga, Ronaldo Husemann, Javier Del Ser, Valter
+	Roesler, Aitor Rodríguez,, Pedro Sánchez},
+  title = {A Tutorial on H.264/SVC Scalable Video Coding and its Tradeoff between
+	Quality, Coding Efficiency and Performance},
+  year = {2011},
+  owner = {Martin},
+  timestamp = {2012.11.17},
+  url = {http://cdn.intechopen.com/pdfs/15138/InTech-A_tutorial_on_h_264_svc_scalable_video_coding_and_its_tradeoff_between_quality_coding_efficiency_and_performance.pdf}
+}
+
+@BOOKLET{MartinezIbanez.2003,
+  title = {MPEG 3DAV AhG Activities Report},
+  author = {Martinez-Iba\~nez, Jose M.},
+  year = {2003},
+  owner = {Martin},
+  shorttitle = {MPEG 3DAV AhG Activities Report},
+  timestamp = {2012.11.12},
+  url = {http://www.iti.gr/SCHEMA/preview.html?file_id=106},
+  urldate = {05.02.2010}
+}
+
+@ARTICLE{WienNeu.2007,
+  author = {Mathias Wien,},
+  title = {Performance Analysis of SVC},
+  owner = {Martin},
+  timestamp = {2012.11.25},
+  url = {http://ip.hhi.de/imagecom_G1/assets/pdfs/PerformanceAnalysis_SVC_IEEE07.pdf}
+}
+
+@BOOKLET{Merkle.2006,
+  title = {Efficient Prediction Structures for Multi-view Video Coding},
+  author = {Merkle, Philipp and Smolic, Aljoscha and M\"uller, Kartsten and Wiegand,
+	Thomas},
+  year = {2006},
+  owner = {Martin},
+  shorttitle = {Efficient Prediction Structures for Multi-view Video Coding},
+  timestamp = {2012.11.12},
+  url = {http://ip.hhi.de/imagecom_G1/assets/pdfs/ieee07_Prediction_MVC.pdf},
+  urldate = {20.02.2010}
+}
+
+@ARTICLE{Oliver.2008,
+  author = {Mark Oliver},
+  title = {The H.264 Scalable Video Codec},
+  owner = {Martin},
+  timestamp = {2012.11.17},
+  url = {http://www.eetimes.com/design/signal-processing-dsp/4017613/Tutorial-The-H-264-Scalable-Video-Codec-SVC-}
+}
+
+@OTHER{Ozaktas.2008,
+  author = {Ozaktas, Haldun M. and Onural, Levent},
+  keywords = {Dreidimensionales Fernsehen;Aufsatzsammlung;Computer vision;Engineering;Physical
+	optics;Telecommunication;Applied Optics, Optoelectronics, Optical
+	Devices;Communications Engineering, Networks;Image Processing and
+	Computer Vision;Signal, Image and Speech Processing},
+  owner = {Martin},
+  shorttitle = {Three-Dimensional Television},
+  timestamp = {2012.11.12},
+  title = {Three-Dimensional Television},
+  year = {2008}
+}
+
+@BOOKLET{Pereira.2006,
+  title = {Distributed Coding for Video Services},
+  author = {Pereira, Fernando and Guillemot, Christine and Leonardi, Ricardo
+	and Ostermann, J\"orn and Ebrahimi, Touradj and Torres, Luis},
+  year = {2006},
+  owner = {Martin},
+  shorttitle = {Distributed Coding for Vdeo Services},
+  timestamp = {2012.11.12},
+  url = {http://www.discoverdvc.org/deliverables/Discover-D7.pdf},
+  urldate = {19.12.2009}
+}
+
+@BOOK{Richy.2011,
+  title = {The H.264 Advanced Video Compression Standard},
+  year = {2011},
+  author = {Iain E. Richardson},
+  owner = {Martin},
+  timestamp = {2012.11.17}
+}
+
+@BOOK{Richardson.2008,
+  title = {H.264 and MPEG-4 Video Compression - Video Coding for Next-Generation
+	Multimedia},
+  year = {2008},
+  author = {Richardson, Iain E.},
+  keywords = {Cold roll forming;Quantisation;Compression;standards;Standard;measurement;Image
+	coding;reviews;Visual;Video codec;Core;Motion estimation;Video coding;Computer
+	animation;Motion compensation},
+  owner = {Martin},
+  shorttitle = {H.264 and MPEG-4 Video Compression},
+  timestamp = {2012.11.12}
+}
+
+@ARTICLE{Gupta.2012,
+  author = {Rohan Gupta, Akshay Pulipaka, Patrick Seeling, Lina J. Karam, and
+	Martin Reisslein},
+  title = {H.264 Coarse Grain Scalable (CGS) and Medium Grain Scalable (MGS)
+	Encoded Video: A Trace Based Traf?c and Quality Evaluation},
+  year = {2012},
+  owner = {Martin},
+  timestamp = {2012.11.25},
+  url = {http://mre.faculty.asu.edu/CGS_MGS_Traffic.pdf}
+}
+
+@ARTICLE{Sader.2008,
+  author = {Ellie Sader},
+  title = {Scalable Video Coding (SVC) \& Broadcast Delivery of 1080P},
+  year = {2008},
+  owner = {Martin},
+  timestamp = {2012.11.14}
+}
+
+@ARTICLE{Schieb.2012,
+  author = {Jörg Schieb},
+  title = {Das Internet wird immer schneller - aber nur langsam},
+  year = {2012},
+  owner = {Martin},
+  timestamp = {2012.11.14},
+  url = {http://wdrblog.de/joergschieb/archives/2012/08/internet_tempo.html}
+}
+
+@ARTICLE{SchwarzNeu.2007,
+  author = {Schwarz, Heiko and Marpe, Detlev and Wiegand, Thomas},
+  title = {Overview of the Scalable Video Coding Extension of the H.264/AVC
+	Standard},
+  journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+  year = {2007},
+  owner = {Martin},
+  shorttitle = {Schwarz, Marpe et al. -- Overview of the Scalable Video},
+  timestamp = {2012.11.12},
+  url = {http://ip.hhi.de/imagecom_G1/assets/pdfs/Overview_SVC_IEEE07.pdf}
+}
+
+@ARTICLE{Shahid.2010,
+  author = {Shahid, Chaumont, Puech},
+  title = {Scalable Video Coding},
+  year = {2010},
+  owner = {Martin},
+  timestamp = {2012.11.24},
+  url = {http://cdn.intechopen.com/pdfs/15732/InTech-Scalable_video_coding.pdf}
+}
+
+@ARTICLE{Shapiro.2009,
+  author = {Offer Shapiro},
+  title = {H.264/SVC (Scalable Video Coding) - New Video Compression Standard},
+  year = {2009},
+  owner = {Martin},
+  timestamp = {2012.11.17},
+  url = {http://www.isccast.com/podcasts.isc365.com/powerpoint/09ISCWest_DI08.pdf}
+}
+
+@ARTICLE{Stelter.2011,
+  author = {Brian Stelter},
+  title = {Ownership of TV Sets Falls in U.S.},
+  year = {2011},
+  owner = {Martin},
+  timestamp = {2012.11.14},
+  url = {http://www.nytimes.com/2011/05/03/business/media/03television.html}
+}
+
+@OTHER{Tabataba.,
+  author = {Tabataba, Ali},
+  owner = {Martin},
+  shorttitle = {Tabataba -- AVC/H.264 Advanced Video Coding},
+  timestamp = {2012.11.12},
+  title = {AVC/H.264 Advanced Video Coding. Codec, Profiles \& System},
+  url = {http://ewh.ieee.org/r6/scv/ce/meetings/IEEE_Talk_Oct25051.pdf}
+}
+
+@OTHER{Wikipedia.,
+  author = {Wikipedia},
+  owner = {Martin},
+  shorttitle = {Wikipedia -- MPEG4-AVC},
+  timestamp = {2012.11.12},
+  title = {MPEG4-AVC},
+  url = {http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC},
+  urldate = {23.02.2010}
+}
+
+@ARTICLE{Zaller.2012.2012,
+  author = {Joe Zaller},
+  title = {Analyzing Where is Money Being Spent in the Broadcast Industry –
+	The 2012 BBS Broadcast Industry Global Project Index},
+  year = {2012},
+  owner = {Martin},
+  timestamp = {2012.11.14},
+  url = {http://blog.devoncroft.com/2012/08/08/analyzing-where-is-money-being-spent-in-the-broadcast-industry-the-2012-bbs-broadcast-industry-global-project-index/}
+}
+
+@ARTICLE{Zaller.2012.Trends,
+  author = {Joe Zaller},
+  title = {Tracking the Evolution of Broadcast Industry Trends 2009 – 2012},
+  year = {2012},
+  owner = {Martin},
+  timestamp = {2012.11.14},
+  url = {http://blog.devoncroft.com/2012/04/09/tracking-the-evolution-of-broadcast-industry-trends-2009-2012/ (Stand 11.11.2012)}
+}
+
+@BOOK{Hottong.2008,
+  title = {Stereoskope HD-Produktion},
+  year = {2008},
+  editor = {Hottong, Nikolaus and Lesik, Dominik},
+  owner = {Martin},
+  shorttitle = {Hottong, Lesik (Hg.) -- Stereoskope HD-Produktion},
+  timestamp = {2012.11.12}
+}
+
+@BOOK{.2003,
+  title = {Digital video and HDTV: algorithms and interfaces},
+  year = {2003},
+  owner = {Martin},
+  shorttitle = {Digital video and HDTV 2003},
+  timestamp = {2012.11.12}
+}
+
+@comment{jabref-meta: selector_review:}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+

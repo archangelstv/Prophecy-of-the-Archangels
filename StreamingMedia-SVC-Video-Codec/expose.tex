@@ -1,0 +1,41 @@
+\input{header}
+
+\begin{document}
+
+\section*{Titel}
+
+Evaluierung der Toolchain für SVC-basiertes HTTP-Videostreaming
+
+\section*{Mitglieder}
+Sharif Hanini\\
+Denis Oczko\\
+Martin Maurer
+
+\section*{Kurzbeschreibung}
+Bisher erfolgt die Auslieferung von Videocontent für Streamingplattformen meist statisch oder mit mehreren 
+festen, vorgegeben Auflösungen und Bitraten. Dadurch ist eine feingranulare Anpassung an die technische Anbindung und 
+Dekodierfähigkeiten der immer zahlreicher werdenden Endgeräte nicht möglich.
+
+Mittlerweile ist mit SVC (Scalable Video Coding) eine Technologie verfügbar, die die Möglichkeit zur 
+dynamischen Anpassung des Videostroms an Übertragungsrate, Framerate, Bitrate, Auflösung und technische 
+Dekodierfähigkeiten der Endgeräte zulässt, ohne das mehrere separate Videofiles erstellt werden müssen. 
+
+SVC ist durch einen eingebetteten H264/AVC-Videostrom, den sogenannten Baselayer, rückwärtskompatibel zu H264/AVC 
+Videodekodern. Durch die Abwärtskompatibilität von SVC zu regulärem H264/AVC steht in der Theorie dem Einsatz im HTTP-Streaming 
+nichts im Wege. Allerdings mangelt es bisher an geeignetten Encodern und Decodern. 
+
+In unserem Projekt 
+wollen wir daher anhand des SVC Referenzcodecs die einzelnen Teile des HTTP-Streamings, wie Encoden, Distribution 
+oder Decoden für verschiedene Einsatzbereiche und unterschiedlichen Videocontent praktisch erproben und 
+evaluieren, inwieweit der Einsatz für HTTP-Streamings bereits möglich ist und wo es noch Hindernisse gibt.
+
+\section*{Funktionsweise von Scalable Video Coding}
+
+\begin{figure}[hbt] \centering \includegraphics[width=0.90\textwidth]{bilder/svc1.jpg}
+	\caption*{Funktionsweise SVC mit eingebetteten Baselayer}
+	\label{fig1}
+\end{figure}
+
+\section*{Mögliche Votragsthemen}
+
+\end{document}

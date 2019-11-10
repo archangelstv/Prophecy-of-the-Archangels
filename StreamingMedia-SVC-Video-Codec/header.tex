@@ -1,0 +1,97 @@
+% Basisformatierungen
+\documentclass[12pt,oneside,pdftex,a4paper,openany,DIV=calc,bibliography=totocnumbered,listof=numbered]{scrbook}
+\usepackage[inner=2.41cm,outer=2.41cm,top=2.41cm,bottom=2.41cm,includeheadfoot]{geometry}
+
+% Zeilenabstand 1,5em
+\usepackage[onehalfspacing]{setspace}
+
+% Absatz Neue Zeile durch Leerzeile
+\usepackage{parskip}
+
+% Absatz Neue Zeile 1em
+%\setlength{\parskip}{16pt}
+
+% Absatz Neue Zeile
+% keine Einrueckung nach rechts
+\setlength{\parindent}{0in}
+
+% Bilderumgebung
+\usepackage{graphicx}
+
+% Sprache - Neue Rechtschreibung 
+\usepackage[ngerman]{babel}
+
+% Umlaute
+\usepackage[latin1] {inputenc}
+
+% t1 Fonts und schoene Schrift
+\usepackage{lmodern}
+\usepackage[T1] {fontenc}
+
+%Kopf- und Fu§zeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%Kopfzeile links bzw. innen
+\fancyhead[LO,RE]{\nouppercase{\leftmark}}
+
+%Kopfzeile rechts bzw. aussen
+\fancyhead[RO,LE]{\thepage}
+
+%\fancyhead[RO,RE]{\includegraphics[width=3cm]{bilder/logo.jpg}}
+
+%Linie oben
+\renewcommand{\headrulewidth}{0.5pt}
+
+%Linie unten
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Überschreibung der Plainzuweisung von Chapterseiten zu Fancy --> Kopfzeile
+\def\chapterpagestyle{fancy}
+
+% Schusterjungenverhinderung
+\clubpenalty = 10000 % schliesst Schusterjungen aus
+\widowpenalty = 10000 % schliesst Hurenkinder aus
+
+% Blindtext
+\usepackage{blindtext}
+
+% fussnotenzitation
+
+%\usepackage[%
+%authorformat={italic},%
+%annotatorformat=italic,
+%titleformat=all,%
+%titleformat={all,commasep},%
+%bibformat={shorttitle},%
+%see,
+%commabeforerest,
+%]{jurabib}
+
+
+% Für Ausrichtungen von Grafiken und Tabellen
+\usepackage{float} 
+\restylefloat{table} 
+
+%Floats für Bilder Text
+\usepackage{wrapfig}
+
+%listings
+\usepackage{listings}
+
+%url schoener formatieren
+\usepackage{url}
+
+% Bilder nebeneinander anordnen
+%\usepackage{caption}
+\usepackage[format=hang,justification=centering,singlelinecheck=off]{caption}
+\usepackage{subcaption}
+
+%Anmerkungen Ende eindeutschen
+\usepackage{endnotes}
+\renewcommand{\notesname}{Anmerkungen}
+
+%Fussnoten Nicht bei jedem Chapter resetten
+\usepackage{chngcntr} 
+\counterwithout{footnote}{chapter}

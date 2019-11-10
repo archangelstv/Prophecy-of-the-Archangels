@@ -1,0 +1,449 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Cho.2010}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Cho}{C.}%
+     {Chuan-Yu}{C.-Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CCY1}
+  \strng{fullhash}{CCY1}
+  \field{sortinit}{C}
+  \field{title}{Overview on Scalable Video Coding - II}
+  \verb{url}
+  \verb http://vc.cs.nthu.edu.tw/home/paper/codfiles/cycho/200507272019/Overvie
+  \verb w_on_Scalable_Video_Coding_-_II.ppt
+  \endverb
+  \field{year}{2010}
+\endentry
+
+\entry{Cisco.2012}{book}{}
+  \field{sortinit}{C}
+  \field{title}{Cisco Visual Networking Index: Forecast and Methodology}
+  \verb{url}
+  \verb http://www.cisco.com/en/US/solutions/collateral/ns341/ns525/ns537/ns705
+  \verb /ns827/white_paper_c11-481360_ns827_Networking_Solutions_White_Paper.ht
+  \verb ml
+  \endverb
+  \field{year}{2012}
+\endentry
+
+\entry{FraunhoferWS.2012}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Fraunhofer}{F.}%
+     {Heinrich Hertz~Institut}{H.~H.~I.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FHHI1}
+  \strng{fullhash}{FHHI1}
+  \field{sortinit}{F}
+  \field{title}{Advanced MPEG Dash}
+  \verb{url}
+  \verb http://www.hhi.fraunhofer.de/de/kompetenzfelder/image-processing/resear
+  \verb ch-groups/multimedia-communications/advanced-mpeg-dash.html
+  \endverb
+  \field{year}{2012}
+\endentry
+
+\entry{Hohlfeld.2010}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hohlfeld}{H.}%
+     {Ralf}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HR1}
+  \strng{fullhash}{HR1}
+  \field{sortinit}{H}
+  \field{title}{Crossmedia -s Wer bleibt auf der Strecke?: Beiträge aus
+  Wissenschaft und Praxis}
+  \field{year}{2010}
+\endentry
+
+\entry{Hottong.2009}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hottong}{H.}%
+     {Nikolaus}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HN1}
+  \strng{fullhash}{HN1}
+  \field{sortinit}{H}
+  \field{shorttitle}{Digitale AV--Technik}
+  \field{title}{Digitale AV--Technik WS 09/10}
+  \field{year}{2009}
+\endentry
+
+\entry{Unanue.2011}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Iraide~Unanue}{I.~U.}%
+     {Ronaldo Husemann Javier Del Ser Valter Roesler Aitor Rodríguez
+  Pedro~Sánchez}{R.~H. J. D. S. V. R. A. R. P.~S.}%
+     {}{}%
+     {Iñigo~Urteaga}{I.~U.}}%
+  }
+  \strng{namehash}{IUIURHJDSVRARPS1}
+  \strng{fullhash}{IUIURHJDSVRARPS1}
+  \field{sortinit}{I}
+  \field{title}{A Tutorial on H.264/SVC Scalable Video Coding and its Tradeoff
+  between Quality, Coding Efficiency and Performance}
+  \verb{url}
+  \verb http://cdn.intechopen.com/pdfs/15138/InTech-A_tutorial_on_h_264_svc_sca
+  \verb lable_video_coding_and_its_tradeoff_between_quality_coding_efficiency_a
+  \verb nd_performance.pdf
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{Richardson.2008}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Richardson}{R.}%
+     {Iain~E.}{I.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Cold roll
+  forming;Quantisation;Compression;standards;Standard;measurement;Image
+  coding;reviews;Visual;Video codec;Core;Motion estimation;Video
+  coding;Computer animation;Motion compensation}
+  \strng{namehash}{RIE1}
+  \strng{fullhash}{RIE1}
+  \field{sortinit}{R}
+  \field{shorttitle}{H.264 and MPEG-4 Video Compression}
+  \field{title}{H.264 and MPEG-4 Video Compression - Video Coding for
+  Next-Generation Multimedia}
+  \field{year}{2008}
+\endentry
+
+\entry{Richy.2011}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Richardson}{R.}%
+     {Iain~E.}{I.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RIE1}
+  \strng{fullhash}{RIE1}
+  \field{sortinit}{R}
+  \field{title}{The H.264 Advanced Video Compression Standard}
+  \field{year}{2011}
+\endentry
+
+\entry{Gupta.2012}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Rohan~Gupta}{R.~G.}%
+     {Patrick Seeling Lina J.~Karam}{P.~S. L. J.~K.}%
+     {}{}%
+     {Akshay~Pulipaka}{A.~P.}}%
+    {{}%
+     {Reisslein}{R.}%
+     {Martin}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RGAPPSLJKRM1}
+  \strng{fullhash}{RGAPPSLJKRM1}
+  \field{sortinit}{R}
+  \field{title}{H.264 Coarse Grain Scalable (CGS) and Medium Grain Scalable
+  (MGS) Encoded Video: A Trace Based Traf?c and Quality Evaluation}
+  \verb{url}
+  \verb http://mre.faculty.asu.edu/CGS_MGS_Traffic.pdf
+  \endverb
+  \field{year}{2012}
+\endentry
+
+\entry{Sader.2008}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sader}{S.}%
+     {Ellie}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SE1}
+  \strng{fullhash}{SE1}
+  \field{sortinit}{S}
+  \field{title}{Scalable Video Coding (SVC) \& Broadcast Delivery of 1080P}
+  \field{year}{2008}
+\endentry
+
+\entry{Schieb.2012}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schieb}{S.}%
+     {Jörg}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SJ1}
+  \strng{fullhash}{SJ1}
+  \field{sortinit}{S}
+  \field{title}{Das Internet wird immer schneller - aber nur langsam}
+  \verb{url}
+  \verb http://wdrblog.de/joergschieb/archives/2012/08/internet_tempo.html
+  \endverb
+  \field{year}{2012}
+\endentry
+
+\entry{SchwarzNeu.2007}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Schwarz}{S.}%
+     {Heiko}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marpe}{M.}%
+     {Detlev}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wiegand}{W.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SHMDWT1}
+  \strng{fullhash}{SHMDWT1}
+  \field{sortinit}{S}
+  \field{shorttitle}{Schwarz, Marpe et al. -- Overview of the Scalable Video}
+  \field{title}{Overview of the Scalable Video Coding Extension of the
+  H.264/AVC Standard}
+  \verb{url}
+  \verb http://ip.hhi.de/imagecom_G1/assets/pdfs/Overview_SVC_IEEE07.pdf
+  \endverb
+  \field{journaltitle}{IEEE Transactions on Circuits and Systems for Video
+  Technology}
+  \field{year}{2007}
+\endentry
+
+\entry{Shahid.2010}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Shahid}{S.}%
+     {Puech}{P.}%
+     {}{}%
+     {Chaumont}{C.}}%
+  }
+  \strng{namehash}{SCP1}
+  \strng{fullhash}{SCP1}
+  \field{sortinit}{S}
+  \field{title}{Scalable Video Coding}
+  \verb{url}
+  \verb http://cdn.intechopen.com/pdfs/15732/InTech-Scalable_video_coding.pdf
+  \endverb
+  \field{year}{2010}
+\endentry
+
+\entry{Shapiro.2009}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Shapiro}{S.}%
+     {Offer}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SO1}
+  \strng{fullhash}{SO1}
+  \field{sortinit}{S}
+  \field{title}{H.264/SVC (Scalable Video Coding) - New Video Compression
+  Standard}
+  \verb{url}
+  \verb http://www.isccast.com/podcasts.isc365.com/powerpoint/09ISCWest_DI08.pd
+  \verb f
+  \endverb
+  \field{year}{2009}
+\endentry
+
+\entry{Slivinski.2011}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Slivinski}{S.}%
+     {Stefan}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SS1}
+  \strng{fullhash}{SS1}
+  \field{sortinit}{S}
+  \field{title}{SVC Demystified: What is Temporal Scalability?}
+  \verb{url}
+  \verb http://www.lifesize.com/videoconferencingspot.com/?p=1406
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{Sanchez.2011}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sánchez}{S.}%
+     {Yago}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SY1}
+  \strng{fullhash}{SY1}
+  \field{sortinit}{S}
+  \field{title}{iDASH: improved Dynamic Adaptive Streaming over HTTP using
+  Scalable Video Coding}
+  \verb{url}
+  \verb http://web.cs.wpi.edu/~claypool/mmsys-2011/Day3-5_idash.pdf
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{Yago.2011}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sánchez}{S.}%
+     {Yago}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SY1}
+  \strng{fullhash}{SY1}
+  \field{sortinit}{S}
+  \field{title}{Title: Scalable Video Coding based DASH for efficient usage of
+  network resources}
+  \verb{url}
+  \verb http://www.w3.org/2011/09/webtv/slides/w3c_presentation_v4.pdf
+  \endverb
+\endentry
+
+\entry{Stelter.2011}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Stelter}{S.}%
+     {Brian}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB1}
+  \strng{fullhash}{SB1}
+  \field{sortinit}{S}
+  \field{title}{Ownership of TV Sets Falls in U.S.}
+  \verb{url}
+  \verb http://www.nytimes.com/2011/05/03/business/media/03television.html
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{WienNeu.2007}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wien}{W.}%
+     {Mathias}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WM1}
+  \strng{fullhash}{WM1}
+  \field{sortinit}{W}
+  \field{title}{Performance Analysis of SVC}
+  \verb{url}
+  \verb http://ip.hhi.de/imagecom_G1/assets/pdfs/PerformanceAnalysis_SVC_IEEE07
+  \verb .pdf
+  \endverb
+\endentry
+
+\entry{Xing.2011}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Xiang}{X.}%
+     {Siyuan}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{XS1}
+  \strng{fullhash}{XS1}
+  \field{sortinit}{X}
+  \field{title}{Scalable Streaming}
+  \verb{url}
+  \verb https://sites.google.com/site/svchttpstreaming/
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{Zaller.2012.2012}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Zaller}{Z.}%
+     {Joe}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZJ1}
+  \strng{fullhash}{ZJ1}
+  \field{sortinit}{Z}
+  \field{title}{Analyzing Where is Money Being Spent in the Broadcast Industry
+  – The 2012 BBS Broadcast Industry Global Project Index}
+  \verb{url}
+  \verb http://blog.devoncroft.com/2012/08/08/analyzing-where-is-money-being-sp
+  \verb ent-in-the-broadcast-industry-the-2012-bbs-broadcast-industry-global-pr
+  \verb oject-index/
+  \endverb
+  \field{year}{2012}
+\endentry
+
+\entry{Zaller.2012.Trends}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Zaller}{Z.}%
+     {Joe}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZJ1}
+  \strng{fullhash}{ZJ1}
+  \field{sortinit}{Z}
+  \field{title}{Tracking the Evolution of Broadcast Industry Trends 2009 –
+  2012}
+  \verb{url}
+  \verb http://blog.devoncroft.com/2012/04/09/tracking-the-evolution-of-broadca
+  \verb st-industry-trends-2009-2012/ (Stand 11.11.2012)
+  \endverb
+  \field{year}{2012}
+\endentry
+
+\entry{techfacts.2011}{book}{}
+  \field{sortinit}{Z}
+  \field{title}{Zukunft des Fernsehens: HbbTV für zusätzliche Informationen aus
+  dem Internet}
+  \verb{url}
+  \verb http://www.techfacts.de/news/technik/zukunft-des-fernsehens-hbbtv-fuer-
+  \verb zusaetzliche-informationen-aus-dem-internet
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
