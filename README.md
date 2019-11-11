@@ -6,6 +6,11 @@
 
    <object width="560" height="340" id="videowhisper" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param name="movie" value="http://cdn.archangelstv.com/videowhisper/livebroadcast.swf?channel=channelname&amp;autoPlay=false"></param><param name="allowScriptAccess" value="always"></param><param name="allowFullScreen" value="true"></param><embed name="lsplayer" wmode="transparent" src="http://cdn.archangelstv.com/videowhisper/LSPlayer.swf?channel=channelname&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed></object><div style="font-size: 11px;padding-top:10px;text-align:center;width:560px">Watch <a href="http://www.archangelstv.com/?utm_source=videowhisper&utm_medium=embed&utm_campaign=footerlinks" title="live streaming video">live streaming video</a> from <a href="http://www.archangelstv.com/channelname?utm_source=videowhisper&utm_medium=embed&utm_campaign=footerlinks" title="Watch channelname at archangelstv.com">channelname</a> at archangelstv.com</div>
 
+<video width="720" height="480" controls>
+  <source src="/movies/{{loaded_video.name}}" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 <video width="560" controls>
   <source src="videos/myvideo.mp4" type="video/mp4">
 </video>
