@@ -10,7 +10,7 @@ C:\gstreamer\1.0\x86_64\bin\gst-launch-1.0.exe -v dx9screencapsrc ! queue ! vide
 
 <video width="560" height="340" preload controls>
 <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org" target="test.h264" />
-
+</video>
 
 <video width="560" height="340" preload controls>
 C:\gstreamer\1.0\x86_64\bin\gst-launch-1.0.exe -v filesrc location=C:\\gstreamer\\1.0\\x86_64\\bin\\hash.h264 ! h264parse config-interval=-1 ! rtph264pay pt=96 config-interval=-1 ! udpsink host=<ip address> port=5004 sync=true
@@ -33,6 +33,8 @@ C:\gstreamer\1.0\x86_64\bin\gst-launch-1.0.exe -v filesrc location=C:\\gstreamer
 	<source src="hh.ogv" type='video/ogg; codecs="theora, vorbis"' />
 	<source src="hh.webm" type='video/webm; codecs="vp8, vorbis"' />-->
 </video>
+
+v4l2src
 
 <object width="560" height="340" id="lsplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param name="movie" value="http://archangelstv.com/ls/live_broadcast.swf?channel=channelname&amp;autoPlay=false"></param><param name="allowScriptAccess" value="always"></param><param name="allowFullScreen" value="true"></param><embed name="lsplayer" wmode="transparent" src="http://archangelstv.com/ls/live_broadcast.swf?channel=channelname&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed></object><div style="font-size: 11px;padding-top:10px;text-align:center;width:560px">Watch <a href="http://www.archangelstv.com/?utm_source=lsplayer&utm_medium=embed&utm_campaign=footerlinks" title="live streaming video">live streaming video</a> from <a href="http://www.archangelstv.com/channelname?utm_source=lsplayer&utm_medium=embed&utm_campaign=footerlinks" title="Watch channelname at archangelstv.com">channelname</a> at archangelstv.com</div>
 
