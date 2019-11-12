@@ -23,10 +23,6 @@ C:\gstreamer\1.0\x86_64\bin\gst-launch-1.0.exe -v filesrc location=C:\\gstreamer
   Your browser does not support the video tag.
 </video>
 
-<video width="560" controls>
-  <source src="videos/myvideo.mp4" type="video/mp4">
-</video>
-
 <video width="560" height="340" preload controls>
   <source src="hh.h264" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
   	<!--<source src="hh.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
