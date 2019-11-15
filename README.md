@@ -166,7 +166,15 @@ That's too bad. Your leader and Military will be to blame. There's nothing that 
 The war here must be an incredible one to do that. There are only a few Humans on other worlds not enough to resead another planet. If you can find a way to stop this insane President from starting this War, everyone would be greatly relieved. Things are bad enough. Like I say, I wish you well----goodbuy.
 
 
+Stonehenge --It's Purpose
 
+I have this abliity to travel out of the body and circumvent all places. I am not like other beings. 
+On this occasion I traveled through dreamscpe (leaving the body while asleep).
+
+I saw in the night Stonehenge, complete with all three rings completly finished.
+Walking through the first ring then the second and then the third which was completly enclosed except for on one end was an opening about six feet  accross. I could see abright light inside the center.
+Part of the secound ring hid the opening. I traversed two of the rings and entered the third. There was a man in a robe with hood guiding me.
+As I entered the center the light became very apparent. It was a bluish white poining skyward from a large stone on the ground. IThere weee about six robed and hooded men standing in front of an upright stone abought waist high. The leader there started talking to me explaining things. I too was hooded and wore a robe like the others. He explained that it was a device shen one would enter the light , he would be transported to another place off planet. I stayed ther and watched as someone left this world. I understood then. Afterward I left Stonehenge. As I say Stoneshnge was completed and it was on a very dark night. I could not tell if this was  in another demintion or this ond but I believe it was in the next one above this one.
 
 
 
