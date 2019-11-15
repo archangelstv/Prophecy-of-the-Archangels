@@ -168,7 +168,7 @@ The war here must be an incredible one to do that. There are only a few Humans o
 
 Stonehenge --It's Purpose
 
-I have this abliity to travel out of the body and circumvent all places. I am not like other beings. 
+I have this abliity to travel out of the body and circumvent all places.  
 On this occasion I traveled through dreamscpe (leaving the body while asleep).
 
 I saw in the night Stonehenge, complete with all three rings completly finished.
