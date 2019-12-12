@@ -37,6 +37,28 @@ We can't transport their bodies, there is simply no way. Star Gates or Time Trav
   </body>
 </html>
 
+/**
+ * onVisibilityChange gets callbacks when the visibility of the browser source changes in OBS
+ *
+ * @param {bool} visibility - True -> visible, False -> hidden
+ */
+window.obsstudio.onVisibilityChange = function(visibility) {
+	
+};
+
+/**
+ * onActiveChange gets callbacks when the active/inactive state of the browser source changes in OBS
+ *
+ * @param {bool} True -> active, False -> inactive
+ */
+window.obsstudio.onActiveChange = function(active) {
+	
+};
+
+window.addEventListener('obsSceneChanged', function(evt) {
+	var t = document.createTextNode(evt.detail.name);
+    document.body.appendChild(t);
+});
 
 ![](images/jes.png)
 
