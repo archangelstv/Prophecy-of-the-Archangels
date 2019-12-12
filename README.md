@@ -60,6 +60,8 @@ window.addEventListener('obsSceneChanged', function(evt) {
 	var t = document.createTextNode(evt.detail.name);
     document.body.appendChild(t);
 });
+gpg --keyserver pool.sks-keyservers.net --recv-keys 78680FA9E21BB40A
+
 
 ![](images/jes.png)
 
