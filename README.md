@@ -15,6 +15,11 @@ if (document.createEvent) {
 }
 </html>
 
+
+Streaming Service: Custom
+Server: rtmp://<70.127.124.114>
+Play Path/Stream Key: test​
+
 $java_python_coders_cli> nw.exe "obs -record_start"
 $java_python_coders_cli> nw.exe "obs -record_stop"
 
