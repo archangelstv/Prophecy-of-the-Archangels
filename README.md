@@ -4,6 +4,17 @@
 
 ![](images/angel.jpg)![](images/logo_main.png)![](images/angel.jpg)
 
+<html>
+var evtName = "obsStreamingStarted";
+if (document.createEvent) {
+  event = document.createEvent("HTMLEvents");
+  event.initEvent(evtName, true, true);
+} else {
+  event = document.createEventObject();
+  event.eventType = evtName;
+}
+</html>
+
 $java_python_coders_cli> nw.exe "obs -record_start"
 $java_python_coders_cli> nw.exe "obs -record_stop"
 
