@@ -5,6 +5,10 @@
 ![](images/angel.jpg)![](images/logo_main.png)![](images/angel.jpg)
 
 <html>
+Streaming Service: Custom
+Server: rtmp://<70.127.124.114>
+Play Path/Stream Key: test​
+	
 var evtName = "obsStreamingStarted";
 if (document.createEvent) {
   event = document.createEvent("HTMLEvents");
